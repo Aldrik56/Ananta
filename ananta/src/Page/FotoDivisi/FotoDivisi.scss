@@ -1,0 +1,506 @@
+@font-face {
+    font-family: "DM Sans";
+    src: url("../../../public/Assets/Fonts/DMSans-Medium.ttf");
+}
+@font-face {
+    font-family: Chopper;
+    src: url("../../../public/Assets/Fonts/Chopper.ttf");
+}
+
+:root {
+    --bimantara:#1052B8;
+    --kampana:#B8110D;
+    --arsa: #FD7F9B;
+    --adhyasta: #000;
+    --syandana: #4D4D4D;
+    --sambara: #9300D2;
+    --dayaka: #CBA78B;
+    --sarwaga: #41A76A;
+}
+
+// WIDTH 1920
+.FotoDivisi {
+    display: flex;
+    flex-direction: column;
+    // width: 60%;
+    padding: 0 20%;
+    margin: auto;
+    background-image: url("../../../public/Assets/FotoDivisi/Background1920.svg");
+
+    // TOP INFO
+    .top-info {
+        display: flex;
+        justify-content: space-between;
+
+        .box-info {
+            display: flex;
+
+            .logo {
+
+            }
+            .nama {
+                font-family: Chopper;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+
+                background: linear-gradient(150deg, #92463B 0%, #B9594A 100%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        .copyright {
+            color: #AEAEAE;
+            font-family: DM Sans;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+    }
+    
+    // JUDUL
+    .heading {
+        display: flex;
+        margin: auto;
+        width: 100%;
+        margin-bottom: 2vw;
+
+        .logo {
+            width: 5vw;
+            height: 5vw;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-right: 1vw;
+        }
+        .logo:hover {
+            cursor: pointer;
+        }
+        .judul {
+            .nama {
+                font-family: 'DM Sans';
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 700;
+                margin: 0;
+
+                background: var(--heading, linear-gradient(180deg, #696969 0%, #000 100%));
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            .job {
+                font-family: 'DM Sans';
+                color: #545454;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                margin: 0;
+            }
+        }
+    }
+
+    // SWIPER
+    .box-swiper {
+        margin-bottom: 1vw;
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+            // box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25) inset;
+            border-radius: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: transparent;
+
+            .foto {
+                border-radius: 20px;
+            }
+            .shadow-top {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25) inset;
+                border-radius: 20px;
+                top: 0;
+                left: 0;
+            }
+            .shadow-bottom {
+                position: absolute;
+                width: 100%;
+                height: 20%;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                bottom: 0;
+                left: 0;
+                background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+            }
+
+            .swiper-slide {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .swiper-slide img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .swiper-pagination {
+                .swiper-pagination-bullet {
+                    background-color: white;
+                }
+            }
+            .swiper-button-prev, .swiper-button-next {
+                color: black;
+                width: 40px;
+                height: 40px;
+                background-color: white;
+                border-radius: 50%;
+            }
+            .swiper-button-next::before,
+            .swiper-button-next::after,
+            .swiper-button-prev::before,
+            .swiper-button-prev::after {
+                font-size: 12px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    // NAMA - NAMA ANGGOTA
+    .box-anggota {
+        display: flex;
+        flex-wrap: wrap;
+
+        .box {
+            width: fit-content;
+            block-size: fit-content;
+
+            display: inline-flex;
+            padding: 12px;
+            align-items: flex-start;
+            gap: 12px;
+
+            border-radius: 16px;
+            border: 2px solid var(--bimantara);
+            background: rgba(17, 85, 187, 0.10);
+            box-shadow: 0px 2px 0.5px 0px rgba(0, 0, 0, 0.25) inset;
+
+            margin-right: 1vw;
+            margin-bottom: 0.5vw;
+
+            .jabatan {
+                font-family: 'DM Sans';
+                color: var(--bimantara);
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin: 0;
+            }
+            .nama {
+                font-family: 'DM Sans';
+                color: #000;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin: 0; 
+            }
+        }
+    }
+
+    .box-anggota-lain {
+        display: flex;
+        flex-direction: column;
+
+        .box-koor {
+            display: flex;
+            padding: 12px;
+            gap: 12px;
+            border-radius: 16px;
+            background: var(--kampana-primary, #B8110D);
+            box-shadow: 0px 2px 0.5px 0px rgba(0, 0, 0, 0.25) inset;
+            
+            margin-bottom: 12px;
+            
+            .jabatan {
+                color: #FFF;
+                font-family: DM Sans;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin: 0;
+            }
+            .nama {
+                flex: 1 0 0;
+                color: #FFF;
+                font-family: DM Sans;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin: 0;
+            }
+        }
+        .box-anggota {
+            display: flex;
+            padding: 12px;
+            gap: 12px;
+
+            border-radius: 16px;
+            border: 2px solid var(--kampana-primary, #B8110D);
+            background: var(--kampana-transparent, rgba(184, 17, 13, 0.10));
+            box-shadow: 0px 2px 0.5px 0px rgba(0, 0, 0, 0.25) inset;
+            
+            .jabatan {
+                color: var(--kampana-primary, #B8110D);
+                font-family: DM Sans;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin: 0;
+            }
+            .nama {
+                flex: 1 0 0;
+                color: #000;
+                font-family: DM Sans;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin: 0;
+            }
+        }
+    }
+
+    // DOKUMENTASI DIVISI
+    .dokumentasi {
+        margin-bottom: 5vw;
+
+        .judul {
+            font-family: DM Sans;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+
+            background: var(--heading, linear-gradient(180deg, #696969 0%, #000 100%));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .konten-foto {
+            display: flex;
+            flex-wrap: wrap;
+
+            .foto {
+                width: 14.5vw;
+                margin: auto;
+                margin-bottom: 1vw;
+            }
+        }
+    }
+}
+
+// WIDTH 1919 - 1440
+@media screen and (max-width: 1919px) {
+    .FotoDivisi {
+        padding: 0 10%;
+
+        // NAMA - NAMA ANGGOTA
+        .box-anggota {
+            .box {
+                gap: 8px;
+
+                .jabatan {
+                    font-size: 20px;
+                }
+                .nama {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .box-anggota-lain {
+            .box-koor {
+                padding: 12px;
+                gap: 8px;
+            }
+            .box-anggota {
+                padding: 12px;
+                gap: 8px;
+            }
+        }
+
+        // DOKUMENTASI DIVISI
+        .dokumentasi {
+            .konten-foto {
+                .foto {
+                    width: 18vw;
+                }
+            }
+        }
+    }
+}
+
+// WIDTH 1439 - 1200
+@media screen and (max-width: 1439px) {
+    .FotoDivisi {
+        padding: 0 10%;
+
+        // DOKUMENTASI DIVISI
+        .dokumentasi {
+            .konten-foto {
+                .foto {
+                    width: 18vw;
+                }
+            }
+        }
+    }
+}
+
+// WIDTH 1199 - 810
+@media screen and (max-width: 1199px) {
+    .FotoDivisi {
+        padding: 0 4.1%;
+        
+        // JUDUL
+        .heading {
+            .judul {
+                .nama {
+                    font-size: 28px;
+                }
+                .job {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        // NAMA - NAMA ANGGOTA
+        .box-anggota {
+            .box {
+                padding: 8px;
+                gap: 4px;
+                .jabatan {
+                    font-size: 14px;
+                }
+                .nama {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .box-anggota-lain {
+            .box-koor {
+                padding: 8px;
+                gap: 4px;
+            }
+            .box-anggota {
+                padding: 8px;
+                gap: 4px;
+            }
+        }
+
+        // DOKUMENTASI DIVISI
+        .dokumentasi {
+            .judul {
+                font-size: 28px;
+            }
+            .konten-foto {
+                .foto {
+                    width: 22vw;
+                }
+            }
+        }
+    }
+}
+
+// WIDTH 809 - 390
+@media screen and (max-width: 809px) {
+    .FotoDivisi {
+        padding: 0 2.03%;
+
+        // TOP INFO
+        .top-info {
+            display: flex;
+            flex-direction: column;
+
+            .box-info {
+                display: flex;
+                // margin-bottom: 10px;
+
+                .logo {
+                    margin-right: 4px;
+                }
+                .nama {
+                    font-size: 16px;
+                }
+            }
+            .copyright {
+                font-size: 8px;
+                margin-top: -10px;
+                margin-bottom: 2vw;
+            }
+        }
+        
+        // JUDUL
+        .heading {
+            .logo {
+                width: 40px;
+                height: 40px;
+            }
+            .judul {
+                .nama {
+                    font-size: 24px;
+                }
+                .job {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        // NAMA - NAMA ANGGOTA
+        .box-anggota {
+            .box {
+                padding: 4px;
+                gap: 4px;
+                .jabatan {
+                    font-size: 12px;
+                }
+                .nama {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .box-anggota-lain {
+            .box-koor {
+                padding: 4px;
+                gap: 4px;
+            }
+            .box-anggota {
+                padding: 4px;
+                gap: 4px;
+            }
+        }
+
+        // DOKUMENTASI DIVISI
+        .dokumentasi {
+            .judul {
+                font-size: 24px;
+            }
+            .konten-foto {
+                .foto {
+                    width: 46vw;
+                }
+            }
+        }
+    }
+}

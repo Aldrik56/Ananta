@@ -9,7 +9,42 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
-    path: "/divisi",
+    path: "/divisi-bimantara",
+    element: <Page.FotoDivisi />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/divisi-kampana",
+    element: <Page.FotoDivisi />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/divisi-arsa",
+    element: <Page.FotoDivisi />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/divisi-adhyasta",
+    element: <Page.FotoDivisi />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/divisi-syandana",
+    element: <Page.FotoDivisi />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/divisi-sambara",
+    element: <Page.FotoDivisi />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/divisi-dayaka",
+    element: <Page.FotoDivisi />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/divisi-sarwaga",
     element: <Page.FotoDivisi />,
     errorElement: <ErrorPage />,
   },
