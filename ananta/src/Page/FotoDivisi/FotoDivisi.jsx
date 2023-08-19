@@ -57,21 +57,21 @@ const FotoDivisi = () => {
         },
         {
             "divisi": "syandana",
-            "koor": "Charina Elliani, Delicia Karen Gunawan, Clarissa Liani Ng",
+            "koor": "Charina Elliani, Clarissa Liani Ng, Delicia Karen Gunawan",
             "anggota": "Caroline Lorenza, Diwanti Divi Afrilia, Ferdinand Julius, Gabrielle Claudia Harto Wibowo, Jehezkiel Immanuel, Jessica Chandra, Muhammad Afiq Walid, Rara Anggreni, Ramadava Ardiyanto, Silvia Andriyani",
             "color": "#4D4D4D",
             "lightColor": "rgba(77, 77, 77, 0.10)",
         },
         {
             "divisi": "sambara",
-            "koor": "Hellen Herlina, Mahdi Husein Punca, Dhaniel Priambodo W",
+            "koor": "Dhaniel Priambodo, Hellen Herlina, Mahdi Husein Punca",
             "anggota": "Airin Livia, Aurellia Ramli, Benedetto Kennard Wijaya, Christoper John Aranda, Cianando Pautrisio Cendranadi, Eunique Jovie, Iman Rhesa Reyhan Amantiya, Indah Desri Wahyuni, Khesar Kurniawan, Kristoforus Kharis Putra Sadsuitubun, Maria Cahaya Amornanta Wirastu, Michael Lucius Wijaya, Nurjihaan, Rafi Rabbani, Raqqat Amarasangga Iswahyudi, Reyhan Phillies Wijaya, Reynard, Vincent Marlino",
             "color": "#9300D2",
             "lightColor": "rgba(147, 0, 210, 0.10)",
         },
         {
             "divisi": "dayaka",
-            "koor": "Steven Natanael Hermanto, Jessica Chandra",
+            "koor": "Jessica Chandra, Steven Natanael Hermanto",
             "anggota": "Alexander Daniel Cahyadi Mogo, Angeline Ageina Susanto, Assyifa Salsabila Hasibuan, Cherry Wijaya, Debora Priscilla Natalia, Delvin Hendro, Gisela Florentina, Jeannie Rukmana, Kleofas, Malvin Wijaya, Maria Jessica Eunike Dahayu, Michelle Liu, Murni Eunike Hutapea, Nasya Karina Wahyudin, Nathania Putri Qhen, Shyerly Shaferya, Yoshella Yuliana",
             "color": "#CBA78B",
             "lightColor": "rgba(203, 167, 139, 0.10)",
@@ -89,7 +89,7 @@ const FotoDivisi = () => {
     const listAnggotaRow = [
         {
             "divisi": "arsa",
-            "koor": "Jocelin Nathania Ichwan, Valecia Monroe Thendy, Christopher Richard Gunawan, Clifford Aaron Darmawan",
+            "koor": "Christopher Richard Gunawan, Clifford Aaron Darmawan, Jocelyn Nathania Ichwan, Valecia Monroe Thendy",
             "anggota": [
                 { "nama": "Gabriella Stevie Euodia Priyono, Sion Alexander Hartono, Christian Johan, Kelly Christian Hariyono, Cindy, Stefani Margaretha Christie, Shafiragiovani Marvella, Adestia Febrianti, Jennifer Abigail, Nicholas Suwandi Wijaya, Gwendeline Gail Sutrisno, Jennefer Chandra, Vinson, Jessica Marella, Angel Lawrensia, Yahaziel Yehuda Prastyoadi, Fenny Dwi Adiwena, Marcel Jonathan, Angeline Precillia, Petris Glaudya Liuwanda, Arsio Viriya Muliyawan, Catherine Olivia" },
                 { "nama": "Alice Marybeth, Cornelia Alyssa Candra, Regina Marcheliza, Hendricus Wibisono, Vidy Tandiono, Jovita Angelina Mettasari, Natalia Christy, Audrey Gracia Chandra, Daniel Cahya Putra, Mawidah Muthia Fitriani, Hotmauli Kristiani Siboro, Marvell Christofer, Sheren Olivia, Edwin Fedora Lolo, Aulia Syifa Arthamevi, Stefanie Jaya Susilo, Sunarto Wijaksono, Siti Muthia Khadijah, Brightly Virya, Sharone Angelica Jovans, Maria Rumbhaney Tarigan, Jessica"},
