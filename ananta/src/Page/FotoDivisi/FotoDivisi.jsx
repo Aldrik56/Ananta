@@ -23,8 +23,8 @@ const FotoDivisi = () => {
     const prevButton = useRef(null);
     const nextButton = useRef(null);
 
-    let lagu = new Audio("./Assets/FotoDivisi/bimantara/YelYel.mp3");
-    lagu.volume = 0.2;
+    let lagu = new Audio("./Assets/FotoDivisi/bimantara/Yelyel.m4a");
+    lagu.volume = 0.3;
 
     const nextSlide = () => {
         setSlide(slide + 1);
@@ -99,13 +99,6 @@ const FotoDivisi = () => {
                 { "nama": "Septhia Rosa Tambunan, Vallencia Natalie Bong, Crispus Adlai Anthony, Vanessa, Jason Timothy Sihite, Patricia Febrina Maharani, Dylan Liong Kusnowo, Livinia Cathleen Gunawan, Margareta Averina Lianti, Richard Sujono, Priscilla Karimang, Christina Elizabeth Kusumaluana, Valencia Aurelia, Diva Anggira Svasty, Francisco Anderson Gultom, Airyara Dorthea Warella, Brilliana Thalia Wijaya, Daffa Albiyananda, Vadreyna, Cindy Theresa, Richard Tandean, Clarensia Anjeli" },
                 { "nama": "Verin Maria, Ivander Kristian Satya Putra, Ruth Yushiana, Alecia Cindy, Florencia Eliana Imansjah, Vallenzia Caroline, Indira Sukma Dewi, Edmund, Jessie Yenca Vegustin, Cindy Florencia, Dylan Ervian, Benaya Arlyanto, Ian Pangeswara Hermawan, Ralph Theodoric Adam Zagoto, Angriany Lutfiyah Darmawan, Sean Marcello Talaar, Rahmah Inayah, Muhammad Alifio Rachman, Charlotte Yeung, Reniati Noor Qomariany" },
             ],
-            // "row1": "Gabriella Stevie Euodia Priyono, Sion Alexander Hartono, Christian Johan, Kelly Christian Hariyono, Cindy, Stefani Margaretha Christie, Shafiragiovani Marvella, Adestia Febrianti, Jennifer Abigail, Nicholas Suwandi Wijaya, Gwendeline Gail Sutrisno, Jennefer Chandra, Vinson, Jessica Marella, Angel Lawrensia, Yahaziel Yehuda Prastyoadi, Fenny Dwi Adiwena, Marcel Jonathan, Angeline Precillia, Petris Glaudya Liuwanda, Arsio Viriya Muliyawan, Catherine Olivia",
-            // "row2": "Alice Marybeth, Cornelia Alyssa Candra, Regina Marcheliza, Hendricus Wibisono, Vidy Tandiono, Jovita Angelina Mettasari, Natalia Christy, Audrey Gracia Chandra, Daniel Cahya Putra, Mawidah Muthia Fitriani, Hotmauli Kristiani Siboro, Marvell Christofer, Sheren Olivia, Edwin Fedora Lolo, Aulia Syifa Arthamevi, Stefanie Jaya Susilo, Sunarto Wijaksono, Siti Muthia Khadijah, Brightly Virya, Sharone Angelica Jovans, Maria Rumbhaney Tarigan, Jessica",
-            // "row3": "Aureen Trevisia Sutarna, Vanessa Olivia, Arifandi Wirawan, Brigitta Julia Sinaulan, Nadhira Keisya Callista, Vania Ardelia, Devin Tarangga, Prisilia Laybertha, Tanzania Febriana, Felicia Aurell Thiopillia, Nicholas Prawira Tanoto, Jocelyn Janice, Laurentinus Heriyanto Setiadi, Michelle Gracya atmaja, Priscillia Lindsey Setiadie, Rizky Ali Zamzami, Rachel Azalia Hariwijaya, Martin, Mitawati, Glen Owen, Melody Dennise Allegra",
-            // "row4": "Christy Angela Limardi, Clarissa Elvira Darmawan, Angelina Yang, Azalea Keisha Putri, Ryan Ferdinand Andyson, Calista Nathalia, Nicholas Carlos Ricardo, Felicia Jennifer, Agym Dimas Tian, Grisella Vevilia Lauren, Marcia Septiani, Ray Anthony Pranoto, Jennifer Landau, Kellysia Mona Andika, Rachel Dayana Telaumbanua, Matthew Chang, Tamara Catalina Suwandi, Melinda Ariyana Dharmanto, Erva Yanti Daneuis, Michelle Williams, Melissa Gracia, Ferbie viona",
-            // "row5": "Marchanda Guritna Halim, Melvin Tristan, Andi Bintang Rihhadatul Aisy, Caesar Eka Nathanael, Andrew Natanael Tjandra, Cindy Aurellia Liwang, Hafizah Balqis, Jacques Farrell Dharma, Priscilla Agatha, Michelle Laurensia, Felix Rafael, Neisya Arsy Argya, Andaru Hymawan Primayudha, Chaterine Laurenthia, Euderen Freyderik, Jessie Valencia Tannuwijaya, Callista Ariella Ginata, Christophorus Augusta Wangsa, Auresia Yunita, Larissa Ika Kamila, Sinung Agung Cahyono, Anastasya Audrey Tengko",
-            // "row6": "Septhia Rosa Tambunan, Vallencia Natalie Bong, Crispus Adlai Anthony, Vanessa, Jason Timothy Sihite, Patricia Febrina Maharani, Dylan Liong Kusnowo, Livinia Cathleen Gunawan, Margareta Averina Lianti, Richard Sujono, Priscilla Karimang, Christina Elizabeth Kusumaluana, Valencia Aurelia, Diva Anggira Svasty, Francisco Anderson Gultom, Airyara Dorthea Warella, Brilliana Thalia Wijaya, Daffa Albiyananda, Vadreyna, Cindy Theresa, Richard Tandean, Clarensia Anjeli",
-            // "row7": "Verin Maria, Ivander Kristian Satya Putra, Ruth Yushiana, Alecia Cindy, Florencia Eliana Imansjah, Vallenzia Caroline, Indira Sukma Dewi, Edmund, Jessie Yenca Vegustin, Cindy Florencia, Dylan Ervian, Benaya Arlyanto, Ian Pangeswara Hermawan, Ralph Theodoric Adam Zagoto, Angriany Lutfiyah Darmawan, Sean Marcello Talaar, Rahmah Inayah, Muhammad Alifio Rachman, Charlotte Yeung, Reniati Noor Qomariany",
             "color": "#FD7F9B",
             "lightColor": "rgba(253, 127, 155, 0.10)",
         },
