@@ -156,7 +156,7 @@ const FotoDivisi = () => {
                     ) : domain == "adhyasta" ? (
                         <div className="judul">
                             <p className="nama">ADHYASTA</p>
-                            <p className="job">KEAMANAN</p>
+                            <p className="job">Keamanan</p>
                         </div>
                     ) : domain == "syandana" ? (
                         <div className="judul">
@@ -294,14 +294,14 @@ const FotoDivisi = () => {
                 <div className="dokumentasi">
                     <p className="judul">Dokumentasi Divisi</p>
                     <div class="konten-foto">
-                        <img className="foto" src={`./Assets/FotoDivisi/${domain}/Dokumentasi1.svg`} alt="" />
-                        <img className="foto" src={`./Assets/FotoDivisi/${domain}/Dokumentasi1.svg`} alt="" />
-                        <img className="foto" src={`./Assets/FotoDivisi/${domain}/Dokumentasi1.svg`} alt="" />
-                        <img className="foto" src={`./Assets/FotoDivisi/${domain}/Dokumentasi1.svg`} alt="" />
-                        <img className="foto" src={`./Assets/FotoDivisi/${domain}/Dokumentasi1.svg`} alt="" />
-                        <img className="foto" src={`./Assets/FotoDivisi/${domain}/Dokumentasi1.svg`} alt="" />
-                        <img className="foto" src={`./Assets/FotoDivisi/${domain}/Dokumentasi1.svg`} alt="" />
-                        <img className="foto" src={`./Assets/FotoDivisi/${domain}/Dokumentasi1.svg`} alt="" />
+                        <img className="foto" src={`./Assets/FotoDivisi/${domain}/Example.jpg`} alt="" />
+                        <img className="foto" src={`./Assets/FotoDivisi/${domain}/Example.jpg`} alt="" />
+                        <img className="foto" src={`./Assets/FotoDivisi/${domain}/Example.jpg`} alt="" />
+                        <img className="foto" src={`./Assets/FotoDivisi/${domain}/Example.jpg`} alt="" />
+                        <img className="foto" src={`./Assets/FotoDivisi/${domain}/Example.jpg`} alt="" />
+                        <img className="foto" src={`./Assets/FotoDivisi/${domain}/Example.jpg`} alt="" />
+                        <img className="foto" src={`./Assets/FotoDivisi/${domain}/Example.jpg`} alt="" />
+                        <img className="foto" src={`./Assets/FotoDivisi/${domain}/Example.jpg`} alt="" />
                     </div>
                 </div>
             </div>

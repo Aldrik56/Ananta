@@ -23,8 +23,6 @@
 
     display: flex;
     flex-direction: column;
-    // width: 60%;
-    // padding: 0 20%;
     padding: 0 300px;
     margin: auto;
     background-image: url("../../../public/Assets/FotoDivisi/Background1920.svg");
@@ -36,7 +34,6 @@
         display: flex;
         justify-content: space-between;
 
-        // align-items: center;
         margin-top: 16px;
         margin-bottom: 16px;
 
@@ -84,12 +81,9 @@
     
     // JUDUL
     .heading {
-
         border: 1px solid black;
 
         display: flex;
-        // margin: auto;
-        // width: 100%;
         margin-bottom: 36px;
 
         align-items: center;
@@ -101,9 +95,11 @@
             margin-bottom: auto;
             margin-right: 1vw;
         }
+
         .logo:hover {
             cursor: pointer;
         }
+
         .judul {
             .nama {
                 font-family: 'DM Sans';
@@ -117,6 +113,7 @@
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
+
             .job {
                 font-family: 'DM Sans';
                 color: #545454;
@@ -145,6 +142,7 @@
             .foto {
                 border-radius: 20px;
             }
+
             .shadow-top {
                 position: absolute;
                 width: 100%;
@@ -154,6 +152,7 @@
                 top: 0;
                 left: 0;
             }
+
             .shadow-bottom {
                 position: absolute;
                 width: 100%;
@@ -170,17 +169,22 @@
                 justify-content: center;
                 align-items: center;
             }
+
             .swiper-slide img {
                 display: block;
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
             }
+
             .swiper-pagination {
+                margin-bottom: 8px;
+
                 .swiper-pagination-bullet {
                     background-color: white;
                 }
             }
+
             .swiper-button-prev, .swiper-button-next {
                 color: black;
                 width: 40px;
@@ -191,6 +195,7 @@
                 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
                 backdrop-filter: blur(30px);
             }
+
             .swiper-button-next::before,
             .swiper-button-next::after,
             .swiper-button-prev::before,
@@ -222,9 +227,6 @@
             background: rgba(17, 85, 187, 0.10);
             box-shadow: 0px 2px 0.5px 0px rgba(0, 0, 0, 0.25) inset;
 
-            // margin-right: 1vw;
-            // margin-bottom: 0.5vw;
-
             .jabatan {
                 font-family: 'DM Sans';
                 color: var(--bimantara);
@@ -234,6 +236,7 @@
                 line-height: normal;
                 margin: 0;
             }
+
             .nama {
                 font-family: 'DM Sans';
                 color: #000;
@@ -260,8 +263,6 @@
             background: var(--kampana-primary, #B8110D);
             box-shadow: 0px 2px 0.5px 0px rgba(0, 0, 0, 0.25) inset;
             
-            // margin-bottom: 12px;
-            
             .jabatan {
                 color: #FFF;
                 font-family: DM Sans;
@@ -271,6 +272,7 @@
                 line-height: normal;
                 margin: 0;
             }
+
             .nama {
                 flex: 1 0 0;
                 color: #FFF;
@@ -282,6 +284,7 @@
                 margin: 0;
             }
         }
+
         .box-anggota {
             display: flex;
             padding: 12px;
@@ -301,6 +304,7 @@
                 line-height: normal;
                 margin: 0;
             }
+
             .nama {
                 flex: 1 0 0;
                 color: #000;
@@ -316,13 +320,10 @@
 
     // DOKUMENTASI DIVISI
     .dokumentasi {
-
         margin-top: 100px;
 
         border: 1px solid black;
         margin-bottom: 5vw;
-
-        
 
         .judul {
             font-family: DM Sans;
@@ -341,25 +342,23 @@
             margin-top: 0;
             margin-bottom: 36px;
         }
+
         .konten-foto {
             border: 1px solid red;
 
-
-            // display: flex;
-            // flex-wrap: wrap;
-
+            width: 100%;
             display: grid;
             grid-template-columns: auto auto auto auto;
+            justify-content: center;
 
             gap: 16px;
 
-            // justify-content: center;
-
             .foto {
-            // width: 318pxs;
-                max-width: fit-content;
-            //     // margin: auto;
-            //     // margin-bottom: 1vw;
+                border: 1px solid red;
+                max-width: 100%;
+                aspect-ratio: 1/1;
+                object-fit: cover;
+                border-radius: 20px;
             }
         }
     }
@@ -377,7 +376,6 @@
             display: flex;
             justify-content: space-between;
 
-            // align-items: center;
             margin-top: 16px;
             margin-bottom: 16px;
 
