@@ -700,6 +700,7 @@
                 border-radius: 8px;
                 padding: 4px;
                 gap: 4px;
+                border: 1px solid var(--bimantara);
 
                 .jabatan {
                     font-size: 12px;
@@ -730,7 +731,7 @@
                 border-radius: 8px;
                 padding: 4px;
                 gap: 4px;
-
+                border: 1px solid var(--kampana-primary, #B8110D);
                 .nama {
                     font-size: 12px;
                 }
