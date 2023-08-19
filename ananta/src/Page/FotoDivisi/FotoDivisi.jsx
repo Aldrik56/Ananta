@@ -58,28 +58,28 @@ const FotoDivisi = () => {
         {
             "divisi": "syandana",
             "koor": "Charina Elliani, Delicia Karen Gunawan, Clarissa Liani Ng",
-            "anggota": "Caroline Lorenza, Silvia Andriyani, Muhammad Afiq Walid, Gabrielle Claudia Harto Wibowo, Ferdinand Julius, Rara Anggreni, Jessica Chandra, Jehezkiel Immanuel, Ramadava Ardiyanto, Diwanti Divi Afrilia",
+            "anggota": "Caroline Lorenza, Diwanti Divi Afrilia, Ferdinand Julius, Gabrielle Claudia Harto Wibowo, Jehezkiel Immanuel, Jessica Chandra, Muhammad Afiq Walid, Rara Anggreni, Ramadava Ardiyanto, Silvia Andriyani",
             "color": "#4D4D4D",
             "lightColor": "rgba(77, 77, 77, 0.10)",
         },
         {
             "divisi": "sambara",
             "koor": "Hellen Herlina, Mahdi Husein Punca, Dhaniel Priambodo W",
-            "anggota": "Christoper John Aranda, Cianando Pautrisio Cendranadi, Eunique Jovie, Reyhan Phillies Wijaya, Rafi Rabbani, Reynard, Vincent Marlino, Indah Desri Wahyuni, Kristoforus Kharis Putra Sadsuitubun, Michael Lucius Wijaya, Nurjihaan S A, Khesar Kurniawan, Benedetto Kennard Wijaya, Raqqat Amarasangga Iswahyudi, Airin Livia, Iman Rhesa Reyhan Amantiya, Maria Cahaya Amornanta Wirastu, Aurellia Ramli",
+            "anggota": "Airin Livia, Aurellia Ramli, Benedetto Kennard Wijaya, Christoper John Aranda, Cianando Pautrisio Cendranadi, Eunique Jovie, Iman Rhesa Reyhan Amantiya, Indah Desri Wahyuni, Khesar Kurniawan, Kristoforus Kharis Putra Sadsuitubun, Maria Cahaya Amornanta Wirastu, Michael Lucius Wijaya, Nurjihaan, Rafi Rabbani, Raqqat Amarasangga Iswahyudi, Reyhan Phillies Wijaya, Reynard, Vincent Marlino",
             "color": "#9300D2",
             "lightColor": "rgba(147, 0, 210, 0.10)",
         },
         {
             "divisi": "dayaka",
             "koor": "Steven Natanael Hermanto, Jessica Chandra",
-            "anggota": "Alexander Daniel Cahyadi Mogo, Nasya Karina Wahyudin, Yoshella Yuliana, Cherry Wijaya, Gisela Florentina, Kleofas, Malvin Wijaya,Michelle Liu,Maria Jessica Eunike Dahayu,Murni Eunike Hutapea,Shyerly Shaferya,Nathania Putri Qhen,Jeannie Rukmana,Delvin Hendro,Assyifa Salsabila Hasibuan,Debora Priscilla Natalia,Angeline Ageina Susanto",
+            "anggota": "Alexander Daniel Cahyadi Mogo, Angeline Ageina Susanto, Assyifa Salsabila Hasibuan, Cherry Wijaya, Debora Priscilla Natalia, Delvin Hendro, Gisela Florentina, Jeannie Rukmana, Kleofas, Malvin Wijaya, Maria Jessica Eunike Dahayu, Michelle Liu, Murni Eunike Hutapea, Nasya Karina Wahyudin, Nathania Putri Qhen, Shyerly Shaferya, Yoshella Yuliana",
             "color": "#CBA78B",
             "lightColor": "rgba(203, 167, 139, 0.10)",
         },
         {
             "divisi": "sarwaga",
             "koor": "Jones Samuel Justine, Novia Ramadina Setiawati",
-            "anggota": "Roger Noel Austin Lee, Michel Fransiska, Vivian Kristin Chiputri, Zeta Milano, Narita Changi, Vania Lay, Novan Gustaf Firyan, Maureen Audilia, Daniel Himawan, Parwinderjeet Singh, Naila Arshiya Hendriana, Lina, Velery Yosafat Chia, Yurcell Young, Angellica Kristie Lin, Keira Norelia Chandra, Cynthia Clara Santy, Nicholas Candra, Nabilah Syafira Ramadhani, Arnela Setianegara, Ryu Ivan Wijaya, Feodora Audrey Clementine, Richard Bona Tua Tindaon, Vianca Vanesia Barhan, Fiorenza Irene Christabelle S., Leonardus Efendi, Jessica Sharon Maria Tampi, Fransisko Krisdian Tara, Najwa Khairunisa, Rio Leonardi, Albert Amadio Trenedy, Patresia Lisnayanti Zalukhu, Andrew Jaya Susilo, Jessica Eunice Sihasale, Rifqah Aulia Salsabilla, Angelima Khosina, Mishel Milen, Laticia Kimberly Tanto, Wiewyn, Keiko Rosario Chrisabel, Gisselle Angelina Tanuwidjaja, Geraldi, Mohamad Syafriza Ramadhan, Chandra Wihaya Fatah, Audy Hendry, Kathryn Cahyadi, Samuel Fernandtio, Syahlarichanda Salsabila",
+            "anggota": "Albert Amadio Trenedy, Andrew Jaya Susilo, Angelima Khosina, Angellica Kristie Lin, Arnela Setianegara, Audy Hendry, Chandra Wihaya Fatah, Cynthia Clara Santy, Daniel Himawan, Feodora Audrey Clementine, Fiorenza Irene Christabelle, Fransisko Krisdian Tara, Geraldi, Gisselle Angelina Tanuwidjaja, Jessica Eunice Sihasale, Jessica Sharon Maria Tampi, Kathryn Cahyadi, Keiko Rosario Chrisabel, Keira Norelia Chandra, Laticia Kimberly Tanto, Leonardus Efendi, Lina, Maureen Audilia, Michel Fransiska, Mishel Milen, Mohamad Syafriza Ramadhan, Naila Arshiya Hendriana, Najwa Khairunisa, Nabilah Syafira Ramadhani, Narita Changi, Nicholas Candra, Novan Gustaf Firyan, Parwinderjeet Singh, Patresia Lisnayanti Zalukhu, Richard Bona Tua Tindaon, Rio Leonardi, Roger Noel Austin Lee, Ryu Ivan Wijaya, Samuel Fernandtio, Syahlarichanda Salsabila, Vania Lay, Velery Yosafat Chia, Vianca Vanesia Barhan, Vivian Kristin Chiputri, Wiewyn",
             "color": "#41A76A",
             "lightColor": "rgba(65, 167, 106, 0.10)",
         },
@@ -131,7 +131,7 @@ const FotoDivisi = () => {
             <div className="FotoDivisi">
                 <div className="top-info">
                     <div className="box-info">
-                        <img className="logo" src="./Assets/FotoDivisi/LogoAnanta.svg" alt="" />
+                        <img className="logo" src="./Assets/FotoDivisi/LogoAnantaNew.svg" alt="" />
                         <p className="nama">Ananta</p>
                     </div>
                     <p className="copyright">© Prabangkara & Wiskira OMB UMN 2023</p>
