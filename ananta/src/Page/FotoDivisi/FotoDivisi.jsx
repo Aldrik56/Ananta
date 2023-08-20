@@ -7,6 +7,9 @@ import 'swiper/css/navigation';
 
 import "./FotoDivisi.scss";
 
+// IMPORT COMPONENTS
+import TopInfo from '../../Components/TopInfo/TopInfo';
+
 const FotoDivisi = () => {
     const path = window.location.pathname;
     const [domain, setDomain] = useState();
@@ -122,13 +125,7 @@ const FotoDivisi = () => {
     return (
         <>
             <div className="FotoDivisi">
-                <div className="top-info">
-                    <div className="box-info">
-                        <img className="logo" src="./Assets/FotoDivisi/LogoAnantaNew.svg" alt="" />
-                        <p className="nama">Ananta</p>
-                    </div>
-                    <p className="copyright">© Prabangkara & Wiskira OMB UMN 2023</p>
-                </div>
+                <TopInfo />
                 <div className="heading">
                     <img className="logo" onClick={() => lagu.play() } src={`./Assets/FotoDivisi/${domain}/Logo.webp`} alt="" />
                     { domain == "bimantara" ? (
