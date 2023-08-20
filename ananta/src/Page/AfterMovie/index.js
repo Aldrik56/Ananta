@@ -1,0 +1,1 @@
+export { AfterMovie } from "./AfterMovie";

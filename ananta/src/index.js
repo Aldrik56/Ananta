@@ -1,8 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 import * as Page from "./Page";
 import ErrorPage from "./error-page";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -48,9 +48,19 @@ const router = createBrowserRouter([
     element: <Page.FotoDivisi />,
     errorElement: <ErrorPage />,
   },
+  {
+    path: "/hari-pelaksanaan",
+    element: <Page.HariPelaksanaan />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/after-movie",
+    element: <Page.AfterMovie />,
+    errorElement: <ErrorPage />,
+  },
 ]);
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
