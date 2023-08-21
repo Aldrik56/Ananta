@@ -26,8 +26,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 300px;
-  padding-top: 0px;
+  padding: 0 480px 0 120px;
   margin: auto;
   background-image: url("../../../public/Assets/FotoDivisi/Background1920.svg");
   .pohon {
@@ -44,13 +43,14 @@
   }
   .timeline {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 16px;
+    width: 100%;
     .timeline-card {
       background-size: cover;
       background-repeat: no-repeat;
-      padding: 16px;
-      padding-top: 677px;
+      padding: 32px 16px;
+      padding-top: 480px;
       background-position: center;
       border-radius: 20px;
       .timeline-card-day {

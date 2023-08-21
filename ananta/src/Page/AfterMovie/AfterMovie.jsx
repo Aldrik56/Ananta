@@ -16,7 +16,7 @@ const AfterMovie = () => {
         <TopInfo />
         <div className="heading">
           <div className="judul">
-            <p className="nama">After Movie OMB UMN 2023</p>
+            <p className="nama"><span>After Movie</span> OMB UMN 2023</p>
             <p className="job">Ini bakal jadi text bawahnya title yang intinya kea penjelasan lebih lanjut terkait titlenya gitu</p>
           </div>
         </div>
