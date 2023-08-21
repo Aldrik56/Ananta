@@ -67,7 +67,6 @@
 
 
     height: fit-content;
-    width:100vh;
     overflow-x: hidden;
     padding:0px 300px 172px 300px; 
 
@@ -83,6 +82,14 @@
             padding:8px 20px;
 
             p {
+                color: #FFF;
+                leading-trim: both;
+                text-edge: cap;
+                font-family: DM Sans;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 160%; 
                 margin:auto 0px;
             }
 
