@@ -1,3 +1,8 @@
+import foto2 from './assetPenetasan/2.svg';
+import foto3 from './assetPenetasan/3.svg';
+import foto4 from './assetPenetasan/4.svg';
+import foto5 from './assetPenetasan/5.svg';
+import foto6 from './assetPenetasan/6.svg';
 
 const hariPenetasan = [
     {
