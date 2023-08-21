@@ -34,7 +34,6 @@
 
 // WIDTH 1919 - 1440
 @media screen and (max-width: 1440px) {
-    .FotoDivisi {
         .top-info {
             .box-info {
                 .logo {
@@ -50,11 +49,9 @@
             }
         }
     }
-}
 
 // WIDTH 1199 - 810
 @media screen and (max-width: 810px) {
-    .FotoDivisi {
         .top-info {
             .box-info {
                 .logo {
@@ -70,11 +67,9 @@
             }
         }
     }
-}
 
 // WIDTH 809 - 432
 @media screen and (max-width: 432px) {
-    .FotoDivisi {
         .top-info {
             flex-direction: column;
             margin-bottom: 24px;
@@ -94,4 +89,3 @@
             }
         }
     }
-}

@@ -26,8 +26,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 300px;
-  padding-top: 0px;
+  padding: 0 480px 0 120px;
   margin: auto;
   background-image: url("../../../public/Assets/FotoDivisi/Background1920.svg");
   .pohondanawan {
@@ -48,6 +47,7 @@
     width: 100%;
     padding-bottom: 56.25%;
     .video {
+      border-radius: 20px;
       position: absolute;
       top: 0;
       left: 0;
@@ -81,6 +81,9 @@
         font-family: "DM Sans";
         font-size: 48px;
         font-style: normal;
+        span {
+          font-style: italic;
+        }
         font-weight: 700;
         margin: 0;
 
@@ -144,6 +147,11 @@
     padding: 0 120px;
     .pohondanawan {
       display: none;
+    }
+    .video-container {
+      .video {
+        border-radius: 12px;
+      }
     }
   }
 }
