@@ -1,1 +1,0 @@
-export { HariHariOMB } from "./HariHariOMB";

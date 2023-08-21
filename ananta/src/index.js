@@ -54,11 +54,6 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/hari-hari-omb",
-    element : <Page.HariHariOMB />,
-    errorElement: <ErrorPage />,
-  },
-  {
     path: "/after-movie",
     element: <Page.AfterMovie />,
     errorElement: <ErrorPage />,
