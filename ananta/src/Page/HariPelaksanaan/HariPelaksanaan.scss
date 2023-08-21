@@ -46,11 +46,12 @@
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 16px;
     width: 100%;
+    margin-bottom: 56px;
     .timeline-card {
       background-size: cover;
       background-repeat: no-repeat;
-      padding: 32px 16px;
-      padding-top: 480px;
+      padding: 20px 16px;
+      padding-top: 640px;
       background-position: center;
       border-radius: 20px;
       .timeline-card-day {
@@ -71,9 +72,7 @@
   .heading {
     display: flex;
     margin-bottom: 36px;
-
     align-items: center;
-
     .logo {
       width: 100px;
       height: auto;
@@ -81,11 +80,9 @@
       margin-bottom: auto;
       margin-right: 20px;
     }
-
     .logo:hover {
       cursor: pointer;
     }
-
     .judul {
       .nama {
         font-family: "DM Sans";
@@ -93,13 +90,11 @@
         font-style: normal;
         font-weight: 700;
         margin: 0;
-
         background: var(--heading, linear-gradient(180deg, #696969 0%, #000 100%));
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
-
       .job {
         font-family: "DM Sans";
         color: #545454;
@@ -112,18 +107,15 @@
   }
 }
 
-// WIDTH 1919 - 1440
-@media screen and (max-width: 1440px) {
+// WIDTH 1919 - 1740 (ONLY HARI PELAKSANAAN PAGE)
+@media screen and (max-width: 1740px) {
   .HariPelaksanaan {
-    padding: 120px;
-    padding-top: 0px;
     .timeline {
-      display: grid;
-      grid-template-columns: repeat(2, auto);
-      gap: 16px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
       .timeline-card {
-        padding-top: 150px;
-        border-radius: 15px;
+        padding-top: 280px;
+        border-radius: 20px;
         .timeline-card-day {
           font-size: 20px;
         }
@@ -132,33 +124,33 @@
         }
       }
     }
+  }
+}
+
+// WIDTH 1739 - 1440
+@media screen and (max-width: 1440px) {
+  .HariPelaksanaan {
+    padding: 0 120px;
 
     // JUDUL
     .heading {
       display: flex;
       margin-bottom: 36px;
-
       .logo {
         width: 82px;
         height: auto;
         margin-right: 20px;
       }
-
       .logo:hover {
         cursor: pointer;
       }
-
       .judul {
         .nama {
           font-size: 40px;
         }
-
         .job {
           font-size: 20px;
         }
-      }
-      .container {
-        grid-template-columns: repeat(2, 1fr);
       }
     }
   }
@@ -167,18 +159,15 @@
 // WIDTH 1439 - 1200
 @media screen and (max-width: 1200px) {
   .HariPelaksanaan {
-    padding: 120px;
-    padding-top: 0px;
     .pohon {
       display: none;
     }
     .timeline {
       display: grid;
-      grid-template-columns: repeat(2, auto);
-      gap: 16px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
       .timeline-card {
-        padding-top: 150px;
-        border-radius: 15px;
+        padding-top: 280px;
         .timeline-card-day {
           font-size: 20px;
         }
@@ -193,18 +182,12 @@
 // WIDTH 1199 - 810
 @media screen and (max-width: 810px) {
   .HariPelaksanaan {
-    padding: 48px;
-    padding-top: 0px;
-    .pohon {
-      display: none;
-    }
+    padding: 0 48px;
     .timeline {
-      display: grid;
-      grid-template-columns: repeat(2, auto);
-      gap: 16px;
+      gap: 8px;
       .timeline-card {
-        padding-top: 150px;
-        border-radius: 15px;
+        padding-top: 160px;
+        border-radius: 12px;
         .timeline-card-day {
           font-size: 14px;
         }
@@ -216,17 +199,14 @@
     // JUDUL
     .heading {
       margin-bottom: 24px;
-
       .logo {
         width: 48px;
         margin-right: 12px;
       }
-
       .judul {
         .nama {
           font-size: 28px;
         }
-
         .job {
           font-size: 14px;
         }
@@ -238,18 +218,13 @@
 // WIDTH 809 - 390
 @media screen and (max-width: 432px) {
   .HariPelaksanaan {
-    padding: 16px;
-    padding-top: 0px;
-    .pohon {
-      display: none;
-    }
+    padding: 0 16px;
     .timeline {
       display: grid;
       grid-template-columns: repeat(1, auto);
-      gap: 16px;
+      gap: 4px;
       .timeline-card {
         padding-top: 150px;
-        border-radius: 15px;
         .timeline-card-day {
           font-size: 12px;
         }
@@ -262,17 +237,14 @@
     // JUDUL
     .heading {
       margin-bottom: 16px;
-
       .logo {
         width: 40px;
         margin-right: 8px;
       }
-
       .judul {
         .nama {
           font-size: 24px;
         }
-
         .job {
           font-size: 12px;
         }
