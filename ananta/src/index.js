@@ -9,6 +9,11 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
+    path: "/divisi",
+    element: <Page.NavigasiDivisi />,
+    errorElement: <ErrorPage />,
+  },
+  {
     path: "/divisi-bimantara",
     element: <Page.FotoDivisi />,
     errorElement: <ErrorPage />,

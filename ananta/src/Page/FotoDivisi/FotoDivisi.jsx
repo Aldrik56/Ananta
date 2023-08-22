@@ -8,26 +8,17 @@ import 'swiper/css/navigation';
 import "./FotoDivisi.scss";
 
 // IMPORT COMPONENTS
-import TopInfo from '../../Components/TopInfo/TopInfo';
+import TopInfo from "../../Components/TopInfo/TopInfo";
+import HeadingLogo from "../../Components/HeadingLogo/HeadingLogo";
 
 const FotoDivisi = () => {
     const path = window.location.pathname;
     const [domain, setDomain] = useState();
     const [slide, setSlide] = useState(0);
-
-    // const Slide1 = useRef(null);
-    // const Slide2 = useRef(null);
-    // const Slide3 = useRef(null);
-    // const Slide4 = useRef(null);
-    // const Slide5 = useRef(null);
-    // const Slide6 = useRef(null);
-    // const Slide7 = useRef(null);
+    const [foto, setFoto] = useState(null);
 
     const prevButton = useRef(null);
     const nextButton = useRef(null);
-
-    let lagu = new Audio("./Assets/FotoDivisi/bimantara/Yelyel.m4a");
-    lagu.volume = 0.3;
 
     const nextSlide = () => {
         setSlide(slide + 1);
@@ -36,6 +27,11 @@ const FotoDivisi = () => {
     const prevSlide = () => {
         setSlide(slide - 1);
     };
+
+    function openModal(props){
+        setModal(!modal);
+        setFoto(props);
+    }
 
     useEffect(() => {
         setDomain(path.substring(8));
@@ -49,6 +45,26 @@ const FotoDivisi = () => {
             setSlide(6);
         }
     }, [slide]);
+
+    // MODAL
+    const [modal, setModal] = useState(false);
+  
+    const Modal = useRef(null);
+  
+    // HANLDE CLOSE MODAL
+    useEffect(() => {
+      const handleClickRemoveModal = (event) => {
+        if (!modal == false) {
+          if (Modal.current) {
+            setModal(false);
+          }
+        }
+      };
+      document.addEventListener("click", handleClickRemoveModal, true);
+      return () => {
+        document.removeEventListener("click", handleClickRemoveModal, true);
+      };
+    }, [modal]);
 
     const listAnggota = [
         {
@@ -110,12 +126,11 @@ const FotoDivisi = () => {
             "koor": "Ananda Ayu Putri, Jeremy Immanuel, Leideovico Yudhisti",
             "anggota": [
                 { "nama": "Gabriella Stevie Euodia Priyono, Sion Alexander Hartono, Christian Johan, Kelly Christian Hariyono, Cindy, Stefani Margaretha Christie, Shafiragiovani Marvella, Adestia Febrianti, Jennifer Abigail, Nicholas Suwandi Wijaya, Gwendeline Gail Sutrisno, Jennefer Chandra, Vinson, Jessica Marella, Angel Lawrensia, Yahaziel Yehuda Prastyoadi, Fenny Dwi Adiwena, Marcel Jonathan, Angeline Precillia, Petris Glaudya Liuwanda, Arsio Viriya Muliyawan, Catherine Olivia" },
+                { "nama": "Gabriella Stevie Euodia Priyono, Sion Alexander Hartono, Christian Johan, Kelly Christian Hariyono, Cindy, Stefani Margaretha Christie, Shafiragiovani Marvella, Adestia Febrianti, Jennifer Abigail, Nicholas Suwandi Wijaya, Gwendeline Gail Sutrisno, Jennefer Chandra, Vinson, Jessica Marella, Angel Lawrensia, Yahaziel Yehuda Prastyoadi, Fenny Dwi Adiwena, Marcel Jonathan, Angeline Precillia, Petris Glaudya Liuwanda, Arsio Viriya Muliyawan, Catherine Olivia" },
+                { "nama": "Alice Marybeth, Cornelia Alyssa Candra, Regina Marcheliza, Hendricus Wibisono, Vidy Tandiono, Jovita Angelina Mettasari, Natalia Christy, Audrey Gracia Chandra, Daniel Cahya Putra, Mawidah Muthia Fitriani, Hotmauli Kristiani Siboro, Marvell Christofer, Sheren Olivia, Edwin Fedora Lolo, Aulia Syifa Arthamevi, Stefanie Jaya Susilo, Sunarto Wijaksono, Siti Muthia Khadijah, Brightly Virya, Sharone Angelica Jovans, Maria Rumbhaney Tarigan, Jessica"},
                 { "nama": "Alice Marybeth, Cornelia Alyssa Candra, Regina Marcheliza, Hendricus Wibisono, Vidy Tandiono, Jovita Angelina Mettasari, Natalia Christy, Audrey Gracia Chandra, Daniel Cahya Putra, Mawidah Muthia Fitriani, Hotmauli Kristiani Siboro, Marvell Christofer, Sheren Olivia, Edwin Fedora Lolo, Aulia Syifa Arthamevi, Stefanie Jaya Susilo, Sunarto Wijaksono, Siti Muthia Khadijah, Brightly Virya, Sharone Angelica Jovans, Maria Rumbhaney Tarigan, Jessica"},
                 { "nama": "Aureen Trevisia Sutarna, Vanessa Olivia, Arifandi Wirawan, Brigitta Julia Sinaulan, Nadhira Keisya Callista, Vania Ardelia, Devin Tarangga, Prisilia Laybertha, Tanzania Febriana, Felicia Aurell Thiopillia, Nicholas Prawira Tanoto, Jocelyn Janice, Laurentinus Heriyanto Setiadi, Michelle Gracya atmaja, Priscillia Lindsey Setiadie, Rizky Ali Zamzami, Rachel Azalia Hariwijaya, Martin, Mitawati, Glen Owen, Melody Dennise Allegra" },
-                { "nama": "Christy Angela Limardi, Clarissa Elvira Darmawan, Angelina Yang, Azalea Keisha Putri, Ryan Ferdinand Andyson, Calista Nathalia, Nicholas Carlos Ricardo, Felicia Jennifer, Agym Dimas Tian, Grisella Vevilia Lauren, Marcia Septiani, Ray Anthony Pranoto, Jennifer Landau, Kellysia Mona Andika, Rachel Dayana Telaumbanua, Matthew Chang, Tamara Catalina Suwandi, Melinda Ariyana Dharmanto, Erva Yanti Daneuis, Michelle Williams, Melissa Gracia, Ferbie viona" },
-                { "nama": "Marchanda Guritna Halim, Melvin Tristan, Andi Bintang Rihhadatul Aisy, Caesar Eka Nathanael, Andrew Natanael Tjandra, Cindy Aurellia Liwang, Hafizah Balqis, Jacques Farrell Dharma, Priscilla Agatha, Michelle Laurensia, Felix Rafael, Neisya Arsy Argya, Andaru Hymawan Primayudha, Chaterine Laurenthia, Euderen Freyderik, Jessie Valencia Tannuwijaya, Callista Ariella Ginata, Christophorus Augusta Wangsa, Auresia Yunita, Larissa Ika Kamila, Sinung Agung Cahyono, Anastasya Audrey Tengko" },
-                { "nama": "Septhia Rosa Tambunan, Vallencia Natalie Bong, Crispus Adlai Anthony, Vanessa, Jason Timothy Sihite, Patricia Febrina Maharani, Dylan Liong Kusnowo, Livinia Cathleen Gunawan, Margareta Averina Lianti, Richard Sujono, Priscilla Karimang, Christina Elizabeth Kusumaluana, Valencia Aurelia, Diva Anggira Svasty, Francisco Anderson Gultom, Airyara Dorthea Warella, Brilliana Thalia Wijaya, Daffa Albiyananda, Vadreyna, Cindy Theresa, Richard Tandean, Clarensia Anjeli" },
-                { "nama": "Verin Maria, Ivander Kristian Satya Putra, Ruth Yushiana, Alecia Cindy, Florencia Eliana Imansjah, Vallenzia Caroline, Indira Sukma Dewi, Edmund, Jessie Yenca Vegustin, Cindy Florencia, Dylan Ervian, Benaya Arlyanto, Ian Pangeswara Hermawan, Ralph Theodoric Adam Zagoto, Angriany Lutfiyah Darmawan, Sean Marcello Talaar, Rahmah Inayah, Muhammad Alifio Rachman, Charlotte Yeung, Reniati Noor Qomariany" },
+                { "nama": "Aureen Trevisia Sutarna, Vanessa Olivia, Arifandi Wirawan, Brigitta Julia Sinaulan, Nadhira Keisya Callista, Vania Ardelia, Devin Tarangga, Prisilia Laybertha, Tanzania Febriana, Felicia Aurell Thiopillia, Nicholas Prawira Tanoto, Jocelyn Janice, Laurentinus Heriyanto Setiadi, Michelle Gracya atmaja, Priscillia Lindsey Setiadie, Rizky Ali Zamzami, Rachel Azalia Hariwijaya, Martin, Mitawati, Glen Owen, Melody Dennise Allegra" },
             ],
             "color": "#000",
             "lightColor": "rgba(0, 0, 0, 0.10)",
@@ -126,50 +141,63 @@ const FotoDivisi = () => {
         <>
             <div className="FotoDivisi">
                 <TopInfo />
-                <div className="heading">
-                    <img className="logo" onClick={() => lagu.play() } src={`./Assets/FotoDivisi/${domain}/Logo.webp`} alt="" />
-                    { domain == "bimantara" ? (
-                        <div className="judul">
-                            <p className="nama">BIMANTARA</p>
-                            <p className="job">Badan Pengurus Harian (BPH)</p>
-                        </div>
-                    ) : domain == "kampana" ? (
-                        <div className="judul">
-                            <p className="nama">KAMPANA</p>
-                            <p className="job">Acara</p>
-                        </div>
-                    ) : domain == "arsa" ? (
-                        <div className="judul">
-                            <p className="nama">ARSA</p>
-                            <p className="job" style={{fontStyle: "italic"}}>Person In Charge (PIC)</p>
-                        </div>
-                    ) : domain == "adhyasta" ? (
-                        <div className="judul">
-                            <p className="nama">ADHYASTA</p>
-                            <p className="job">Keamanan</p>
-                        </div>
-                    ) : domain == "syandana" ? (
-                        <div className="judul">
-                            <p className="nama">SYANDANA</p>
-                            <p className="job" style={{fontStyle: "italic"}}>Public Relation & Design</p>
-                        </div>
-                    ) : domain == "sambara" ? (
-                        <div className="judul">
-                            <p className="nama">SAMBARA</p>
-                            <p className="job">Perlengkapan</p>
-                        </div>
-                    ) : domain == "dayaka" ? (
-                        <div className="judul">
-                            <p className="nama">DAYAKA</p>
-                            <p className="job">Konsumsi</p>
-                        </div>
-                    ) : domain == "sarwaga" ? (
-                        <div className="judul">
-                            <p className="nama">SARWAGA</p>
-                            <p className="job">Medis</p>
-                        </div>
-                    ) : null }
-                </div>
+                { domain == "bimantara" ? (
+                    <HeadingLogo
+                        lagu={`./Assets/FotoDivisi/${domain}/Yelyel.m4a`}
+                        img={`./Assets/FotoDivisi/${domain}/Logo.webp`}
+                        nama="BIMANTARA"
+                        job="Badan Pengurus Harian (BPH)"
+                    />
+                ) : domain == "kampana" ? (
+                    <HeadingLogo 
+                        lagu={`./Assets/FotoDivisi/${domain}/Yelyel.m4a`}
+                        img={`./Assets/FotoDivisi/${domain}/Logo.webp`}
+                        nama="KAMPANA"
+                        job="Acara"
+                    />
+                ) : domain == "arsa" ? (
+                    <HeadingLogo 
+                        lagu={`./Assets/FotoDivisi/${domain}/Yelyel.m4a`}
+                        img={`./Assets/FotoDivisi/${domain}/Logo.webp`}
+                        nama="ARSA"
+                        job="Person In Charge (PIC)"
+                    />
+                ) : domain == "adhyasta" ? (
+                    <HeadingLogo 
+                        lagu={`./Assets/FotoDivisi/${domain}/Yelyel.m4a`}
+                        img={`./Assets/FotoDivisi/${domain}/Logo.webp`}
+                        nama="ADHYASTA"
+                        job="Keamanan"
+                    />
+                ) : domain == "syandana" ? (
+                    <HeadingLogo 
+                        lagu={`./Assets/FotoDivisi/${domain}/Yelyel.m4a`}
+                        img={`./Assets/FotoDivisi/${domain}/Logo.webp`}
+                        nama="SYANDANA"
+                        job="Public Relation & Design"
+                    />
+                ) : domain == "sambara" ? (
+                    <HeadingLogo 
+                        lagu={`./Assets/FotoDivisi/${domain}/Yelyel.m4a`}
+                        img={`./Assets/FotoDivisi/${domain}/Logo.webp`}
+                        nama="SAMBARA"
+                        job="Perlengkapan"
+                    />
+                ) : domain == "dayaka" ? (
+                    <HeadingLogo 
+                        lagu={`./Assets/FotoDivisi/${domain}/Yelyel.m4a`}
+                        img={`./Assets/FotoDivisi/${domain}/Logo.webp`}
+                        nama="DAYAKA"
+                        job="Konsumsi"
+                    />
+                ) : domain == "sarwaga" ? (
+                    <HeadingLogo 
+                        lagu={`./Assets/FotoDivisi/${domain}/Yelyel.m4a`}
+                        img={`./Assets/FotoDivisi/${domain}/Logo.webp`}
+                        nama="SARWAGA"
+                        job="Medis"
+                    />
+                ) : null }
                 <div className="box-swiper">
                     <Swiper
                     slidesPerView={1}
@@ -284,17 +312,24 @@ const FotoDivisi = () => {
                 <div className="dokumentasi">
                     <p className="judul">Dokumentasi Divisi</p>
                     <div class="konten-foto">
-                        <img className="foto" src={`./Assets/FotoDivisi/${domain}/Example.jpg`} alt="" />
-                        <img className="foto" src={`./Assets/FotoDivisi/${domain}/Example.jpg`} alt="" />
-                        <img className="foto" src={`./Assets/FotoDivisi/${domain}/Example.jpg`} alt="" />
-                        <img className="foto" src={`./Assets/FotoDivisi/${domain}/Example.jpg`} alt="" />
-                        <img className="foto" src={`./Assets/FotoDivisi/${domain}/Example.jpg`} alt="" />
-                        <img className="foto" src={`./Assets/FotoDivisi/${domain}/Example.jpg`} alt="" />
-                        <img className="foto" src={`./Assets/FotoDivisi/${domain}/Example.jpg`} alt="" />
-                        <img className="foto" src={`./Assets/FotoDivisi/${domain}/Example.jpg`} alt="" />
+                        <img className="foto" onClick={() => openModal("./Assets/FotoDivisi/" + `${domain}` + "/Example.jpg")} src={`./Assets/FotoDivisi/${domain}/Example.jpg`} alt="" />
+                        <img className="foto" onClick={() => openModal("./Assets/FotoDivisi/" + `${domain}` + "/Example.jpg")} src={`./Assets/FotoDivisi/${domain}/Example.jpg`} alt="" />
+                        <img className="foto" onClick={() => openModal("./Assets/FotoDivisi/" + `${domain}` + "/Example.jpg")} src={`./Assets/FotoDivisi/${domain}/Example.jpg`} alt="" />
+                        <img className="foto" onClick={() => openModal("./Assets/FotoDivisi/" + `${domain}` + "/Example.jpg")} src={`./Assets/FotoDivisi/${domain}/Example.jpg`} alt="" />
+                        <img className="foto" onClick={() => openModal("./Assets/FotoDivisi/" + `${domain}` + "/Example.jpg")} src={`./Assets/FotoDivisi/${domain}/Example.jpg`} alt="" />
+                        <img className="foto" onClick={() => openModal("./Assets/FotoDivisi/" + `${domain}` + "/Example.jpg")} src={`./Assets/FotoDivisi/${domain}/Example.jpg`} alt="" />
+                        <img className="foto" onClick={() => openModal("./Assets/FotoDivisi/" + `${domain}` + "/Example.jpg")} src={`./Assets/FotoDivisi/${domain}/Example.jpg`} alt="" />
+                        <img className="foto" onClick={() => openModal("./Assets/FotoDivisi/" + `${domain}` + "/Example.jpg")} src={`./Assets/FotoDivisi/${domain}/Example.jpg`} alt="" />
                     </div>
                 </div>
             </div>
+            {modal ? 
+                <div ref={Modal} id="comingsoon" className="comingsoon">
+                    <div className="modal-content">
+                        <img className="foto" src={foto} alt="" />
+                    </div>
+                </div>
+            : null }
         </>
     )
 }

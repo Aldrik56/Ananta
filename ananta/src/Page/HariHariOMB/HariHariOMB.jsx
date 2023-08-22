@@ -4,6 +4,7 @@ import hariPenetasan from './hariPenetasan.js';
 import hariPembentukan1 from './hariPembentukan1';
 import hariPembentukan2 from './hariPembentukan2';
 import TopInfo from "../../Components/TopInfo/TopInfo";
+import Heading from '../../Components/Heading/Heading';
 const HariHariOMB= (props)=> {
     const [day,setDay] = useState(props.id == null ? 0 : props.id);
     const array = [
@@ -31,10 +32,11 @@ const HariHariOMB= (props)=> {
             <div className="bg_container2">
                 <div className="hariHariOMB__section">
                     <TopInfo />
-                    <div className="hariHari__titleBox">
+                    <Heading nama={array[day].title} job={array[day].subTitle} />
+                    {/* <div className="hariHari__titleBox">
                         <h1 className="hariHariOMB__title">{array[day].title}</h1>
                         <p className="hariHariOMB__subTitle">{array[day].subTitle}</p>
-                    </div>
+                    </div> */}
                     <div className="hariHariOMB__aksesBox">
                         <div>
                             <p>Mau lihat semua dokumentasi?</p>

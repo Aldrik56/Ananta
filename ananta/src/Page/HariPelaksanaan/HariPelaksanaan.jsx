@@ -5,6 +5,7 @@ import "swiper/css/navigation";
 import "./HariPelaksanaan.scss";
 import Navbar from "../../Components/Navbar/Navbar";
 import TopInfo from "../../Components/TopInfo/TopInfo";
+import Heading from "../../Components/Heading/Heading";
 
 const HariPelaksanaan = () => {
   const path = window.location.pathname;
@@ -37,12 +38,13 @@ const HariPelaksanaan = () => {
       <div className="HariPelaksanaan">
         <div className="pohon"></div>
         <TopInfo />
-        <div className="heading">
+        <Heading nama="Hari Pelaksanaan" job="Ini bakal jadi text bawahnya title yang intinya kea penjelasan lebih lanjut terkait titlenya gitu" />
+        {/* <div className="heading">
           <div className="judul">
             <p className="nama">Hari Pelaksanaan</p>
             <p className="job">Ini bakal jadi text bawahnya title yang intinya kea penjelasan lebih lanjut terkait titlenya gitu</p>
           </div>
-        </div>
+        </div> */}
         <div className="timeline">
           {hari.map((item) => (
             <div className="timeline-card" style={{ backgroundImage: `linear-gradient(180deg, rgba(2,0,36,0) 65%, rgba(0,0,0,1) 100%), url(${item.img})` }}>

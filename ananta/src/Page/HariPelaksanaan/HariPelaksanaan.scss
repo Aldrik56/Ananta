@@ -46,6 +46,10 @@
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 16px;
     width: 100%;
+
+    // KALAU PAKAI COMPONENT HEADING
+    margin-top: 36px;
+
     margin-bottom: 56px;
     .timeline-card {
       background-size: cover;
@@ -184,6 +188,9 @@
   .HariPelaksanaan {
     padding: 0 48px;
     .timeline {
+      // KALAU PAKAI COMPONENT HEADING
+      margin-top: 24px;
+
       gap: 8px;
       .timeline-card {
         padding-top: 160px;
@@ -223,6 +230,10 @@
       display: grid;
       grid-template-columns: repeat(1, auto);
       gap: 4px;
+
+      // KALAU PAKAI COMPONENT HEADING
+      margin-top: 16px;
+
       .timeline-card {
         padding-top: 150px;
         .timeline-card-day {

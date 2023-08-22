@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "DM Sans";
+    src: url("../../../public/Assets/Fonts/DMSans-Medium.ttf");
+}
+@font-face {
+    font-family: Chopper;
+    src: url("../../../public/Assets/Fonts/Chopper.ttf");
+}
+:root {
+    --bimantara:#1052B8;
+    --kampana:#B8110D;
+    --arsa: #FD7F9B;
+    --adhyasta: #000;
+    --syandana: #4D4D4D;
+    --sambara: #9300D2;
+    --dayaka: #CBA78B;
+    --sarwaga: #41A76A;
+}
+
+.judul {
+    .nama {
+        font-family: 'DM Sans';
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        margin: 0;
+        background: var(--heading, linear-gradient(180deg, #696969 0%, #000 100%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .job {
+        font-family: 'DM Sans';
+        color: #545454;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .judul {
+        .nama {
+            font-size: 40px;
+        }
+        .job {
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 810px) {
+
+    .judul {
+        .nama {
+            font-size: 28px;
+        }
+        .job {
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 432px) {
+    .judul {
+        .nama {
+            font-size: 24px;
+        }
+        .job {
+            font-size: 12px;
+        }
+    }
+
+}

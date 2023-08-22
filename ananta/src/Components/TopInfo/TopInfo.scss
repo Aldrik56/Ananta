@@ -33,65 +33,59 @@
 }
 
 // WIDTH 1919 - 1440
-@media screen and (max-width: 1440px) {
-    .FotoDivisi {
-        .top-info {
-            .box-info {
-                .logo {
-                    width: 32px;
-                }
-                .nama {
-                    font-size: 20px;
-                    margin: 0 0 0 4px;
-                }
+@media screen and (max-width: 1439px) {
+    .top-info {
+        .box-info {
+            .logo {
+                width: 32px;
             }
-            .copyright {
-                font-size: 12px;     
+            .nama {
+                font-size: 20px;
+                margin: 0 0 0 4px;
             }
+        }
+        .copyright {
+            font-size: 12px;     
         }
     }
 }
 
-// WIDTH 1199 - 810
-@media screen and (max-width: 810px) {
-    .FotoDivisi {
-        .top-info {
-            .box-info {
-                .logo {
-                    width: 20px;
-                }
-                .nama {
-                    font-size: 18px;
-                    margin: 0 0 0 4px;
-                }
+// WIDTH <= 810 dan > 432
+@media screen and (max-width: 809px) {
+    .top-info {
+        .box-info {
+            .logo {
+                width: 20px;
             }
-            .copyright {
-                font-size: 10px;     
+            .nama {
+                font-size: 18px;
+                margin: 0 0 0 4px;
             }
+        }
+        .copyright {
+            font-size: 10px;     
         }
     }
 }
 
-// WIDTH 809 - 432
+// WIDTH <= 432
 @media screen and (max-width: 432px) {
-    .FotoDivisi {
-        .top-info {
-            flex-direction: column;
-            margin-bottom: 24px;
-            .box-info {
-                .logo {
-                    width: 20px;
-                }
-                .nama {
-                    font-size: 16px;
-                    margin: 0 0 0 4px;
-                }
+    .top-info {
+        flex-direction: column;
+        margin-bottom: 24px;
+        .box-info {
+            .logo {
+                width: 20px;
             }
-            .copyright {
-                margin-top: 4;
-                margin-bottom: 0;
-                font-size: 8px;     
+            .nama {
+                font-size: 16px;
+                margin: 0 0 0 4px;
             }
+        }
+        .copyright {
+            margin-top: 4;
+            margin-bottom: 0;
+            font-size: 8px;     
         }
     }
 }
