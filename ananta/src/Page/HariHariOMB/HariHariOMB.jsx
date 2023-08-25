@@ -60,7 +60,7 @@ const HariHariOMB= (props)=> {
                         <div>
                             <p>Mau lihat semua dokumentasi?</p>
                             <div className="aksesDriveDiv">
-                                <img src="./Assets/HariHariOMB/downloadDrive.svg" alt="" />
+                                <img src="/Assets/HariHariOMB/downloadDrive.svg" alt="" />
                                 <a href="">Akses Drive</a>
                             </div>
                         </div>
