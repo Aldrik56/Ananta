@@ -11,6 +11,7 @@ const AfterMovie = () => {
 
   return (
     <>
+      <Navbar />
       <div className="AfterMovie">
         <div className="pohondanawan"></div>
         <TopInfo />
