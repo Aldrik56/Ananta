@@ -19,211 +19,220 @@
 
 // WIDTH > 1440
 .NavigasiDivisi {
+    position: relative;
     display: flex;
-    width: 100%;
-    justify-content: space-between;
+    flex-direction: column;
     margin: auto;
+    padding: 0 480px 10rem 120px;
     background-image: url("../../../public/Assets/NavigasiDivisi/Background.svg");
+    
+    // BACKGROUND
+    .Background {
+        background-image: url("../../../public/Assets/NavigasiDivisi/Pohon.svg");
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        z-index: -1;
+    }
 
-    .konten {
-        width: 64%;
-        padding: 0 0 0 120px;
+    // SWIPER
+    .box-swiper {
+        position: relative;
+        margin-bottom: 16px;
+        width: 100%;
+        margin: 0;
+        margin-top: 36px;
 
-        // SWIPER
-        .box-swiper {
-            position: relative;
-            margin-bottom: 16px;
+        .swiper {
             width: 100%;
+            aspect-ratio: 16/9;
+            border-radius: 20px;
             margin: 0;
-            margin-top: 36px;
-
-            .swiper {
-                width: 100%;
-                aspect-ratio: 16/9;
+            background-color: transparent;
+            .foto {
                 border-radius: 20px;
+            }
+            .box-link {
+                position: absolute;
+                width: 100%;
+                height: 100%;
                 margin: 0;
-                background-color: transparent;
-                .foto {
-                    border-radius: 20px;
-                }
-                .box-link {
+                padding: 0;
+                .shadow-top {
                     position: absolute;
                     width: 100%;
                     height: 100%;
-                    margin: 0;
-                    padding: 0;
-                    .shadow-top {
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25) inset;
-                        border-radius: 20px;
-                        top: 0;
-                        left: 0;
-                        background-image: url("../../../public/Assets/NavigasiDivisi/Texture.png");
-                    }
-                    .shadow-divisi {
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        border-radius: 20px;
-                        bottom: 0;
-                        left: 0;
-                    }
-                    .info-divisi {
-                        position: absolute;
-                        width: 94%;
-                        height: 30%;
-                        border-radius: 20px;
-                        bottom: 0;
-                        left: 0;
-    
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: flex-end;
-    
-                        margin: 16px 16px 20px;
-                        
-                        .box {
-                            display: flex;
-                            justify-content: space-between;
-    
-                            margin-bottom: 18px;
-    
-                            .box-text {
-                                line-height: normal;
-                                .divisi {
-                                    font-family: DM Sans;
-                                    font-size: 24px;
-                                    font-style: normal;
-                                    font-weight: 400;
-                                    line-height: normal;
-        
-                                    text-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25) inset;
-                                    background: var(--white, linear-gradient(180deg, #F7F7F7 0%, #DBDBDB 100%));
-                                    background-clip: text;
-                                    -webkit-background-clip: text;
-                                    -webkit-text-fill-color: transparent;
-    
-                                    margin: 0;
-                                }
-                                .nama {
-                                    font-family: DM Sans;
-                                    font-size: 32px;
-                                    font-style: normal;
-                                    font-weight: 700;
-                                    line-height: normal;
-                                    
-                                    text-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25) inset;
-                                    background: var(--white, linear-gradient(180deg, #F7F7F7 0%, #DBDBDB 100%));
-                                    background-clip: text;
-                                    -webkit-background-clip: text;
-                                    -webkit-text-fill-color: transparent;
-    
-                                    margin: 0;
-                                }
-                            }
-                            .box-logo {
-                                width: 76px;
-                                height: 76px;
-                                display: flex;
-                                align-items: center;
-                                padding: 6px;
-        
-                                background-color: rgba(255, 255, 255, 0.70);
-                                box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.25);
-                                backdrop-filter: blur(4px);
-                                border-radius: 62px;
-    
-                                margin: auto 0;
-        
-                                .logo {
-                                    width: 72px;
-                                    height: 72px;
-                                    margin: auto;
-                                }
-                            }
-                        } 
-                        .job {
-                            font-family: DM Sans;
-                            font-size: 14px;
-                            font-style: normal;
-                            font-weight: 500;
-                            line-height: normal;
-    
-                            background: var(--white, linear-gradient(180deg, #F7F7F7 0%, #DBDBDB 100%));
-                            background-clip: text;
-                            -webkit-background-clip: text;
-                            -webkit-text-fill-color: transparent;
-                            margin: 0;
-                        }
-                    }
+                    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25) inset;
+                    border-radius: 20px;
+                    top: 0;
+                    left: 0;
+                    background-image: url("../../../public/Assets/NavigasiDivisi/Texture.png");
                 }
-                .swiper-slide {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-                .swiper-slide img {
-                    display: block;
+                .shadow-divisi {
+                    position: absolute;
                     width: 100%;
                     height: 100%;
-                    object-fit: cover;
+                    border-radius: 20px;
+                    bottom: 0;
+                    left: 0;
                 }
-                .swiper-button-prev, .swiper-button-next {
-                    color: black;
-                    width: 40px;
-                    height: 40px;
-                    background-color: rgba(255, 255, 255, 0.60);
-                    border-radius: 50%;
-                    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-                    backdrop-filter: blur(4px);
-                }
-                .swiper-button-next::before,
-                .swiper-button-next::after,
-                .swiper-button-prev::before,
-                .swiper-button-prev::after {
-                    font-size: 12px;
-                    font-weight: bold;
+                .info-divisi {
+                    position: absolute;
+                    width: 92%;
+                    height: 30%;
+                    border-radius: 20px;
+                    bottom: 0;
+                    left: 0;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+
+                    margin: 16px 16px 20px;
+                    
+                    .box {
+                        display: flex;
+                        justify-content: space-between;
+
+                        margin-bottom: 18px;
+
+                        .box-text {
+                            line-height: normal;
+                            margin-top: auto;
+                            margin-bottom: auto;
+
+                            .divisi {
+                                font-family: DM Sans;
+                                font-size: 24px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+    
+                                text-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25) inset;
+                                background: var(--white, linear-gradient(180deg, #F7F7F7 0%, #DBDBDB 100%));
+                                background-clip: text;
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+
+                                margin: 0;
+                            }
+                            .nama {
+                                font-family: DM Sans;
+                                font-size: 32px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                                
+                                text-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25) inset;
+                                background: var(--white, linear-gradient(180deg, #F7F7F7 0%, #DBDBDB 100%));
+                                background-clip: text;
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+
+                                margin: 0;
+                            }
+                        }
+                        .box-logo {
+                            width: 76px;
+                            height: 76px;
+                            display: flex;
+                            align-items: center;
+                            padding: 6px;
+    
+                            background-color: rgba(255, 255, 255, 0.70);
+                            box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.25);
+                            backdrop-filter: blur(4px);
+                            border-radius: 62px;
+
+                            margin: auto 0;
+    
+                            .logo {
+                                width: 72px;
+                                height: 72px;
+                                margin: auto;
+                            }
+                        }
+                    } 
+                    .job {
+                        font-family: DM Sans;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+
+                        background: var(--white, linear-gradient(180deg, #F7F7F7 0%, #DBDBDB 100%));
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        margin: 0;
+                    }
                 }
             }
-            .swiper-pagination {
-                position: absolute;
-                bottom: -8%;
-                left: -47%;
-                // border: 2px solid red;
-                
-                .swiper-pagination-bullet {
-                    background-color: black;
-                    box-shadow: 0px 1px 0.5px 0px rgba(0, 0, 0, 0.25) inset;
-                }
+            .swiper-slide {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .swiper-slide img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .swiper-button-prev, .swiper-button-next {
+                color: black;
+                width: 40px;
+                height: 40px;
+                background-color: rgba(255, 255, 255, 0.60);
+                border-radius: 50%;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                backdrop-filter: blur(4px);
+            }
+            .swiper-button-next::before,
+            .swiper-button-next::after,
+            .swiper-button-prev::before,
+            .swiper-button-prev::after {
+                font-size: 12px;
+                font-weight: bold;
             }
         }
-        // GRID
-        .box-grid {
-            display: none;
+        .swiper-pagination {
+            position: absolute;
+            bottom: -8%;
+            left: -47%;
+            // border: 2px solid red;
+            
+            .swiper-pagination-bullet {
+                background-color: black;
+                box-shadow: 0px 1px 0.5px 0px rgba(0, 0, 0, 0.25) inset;
+            }
         }
     }
-    .pohon {
-        width: auto;
-        opacity: 0.65;
+    // GRID
+    .box-grid {
+        display: none;
     }
 }
 
 // WIDTH <= 1440 dan > 1200
 @media screen and (max-width: 1439px) {
     .NavigasiDivisi {
-        .konten {
-            .box-swiper {
-                .swiper-pagination {
-                    left: -46.5%;
-                }
+        padding: 0 396px 10rem 120px;
+
+        .box-swiper {
+            .swiper-pagination {
+                left: -46.5%;
             }
         }
     }
 }
 
-// WIDTH <= 1200 dan > 810
+// WIDTH <= 1200 dan > 1000
 @media screen and (max-width: 1199px) {
     .NavigasiDivisi {
         flex-direction: column;
@@ -231,157 +240,316 @@
         padding: 0 120px 10rem;
         margin: auto;
 
-        .konten {
-            width: 100%;
-            padding: 0;
-            margin: auto;
-
-            // SWIPER
-            .box-swiper {
-                margin-bottom: 15vw;
-                .swiper {
-                    margin: 0 auto;
-                }
-                .swiper-pagination {
-                    left: -46%;
-                }
-            }
-        }
-        .pohon {
+        // BACKGROUND
+        .Background {
             display: none;
+        }
+        // SWIPER
+        .box-swiper {
+            margin-bottom: 15vw;
+            .swiper {
+                margin: 0 auto;
+            }
+            .swiper-pagination {
+                left: -46%;
+            }
         }
     }
 }
 
-// WIDTH <= 810 dan > 432
-@media screen and (max-width: 809px) {
+// WIDTH <= 1000 dan > 810
+@media screen and (max-width: 1000px) {
     .NavigasiDivisi {
-        .konten {
-            .box-swiper {
-                display: none;
-            }
-            .box-grid {
-                display: grid;
-                grid-template-columns: auto auto;
-                gap: 8px;
-
-                margin-top: 24px;
-                margin-bottom: 5vw;
-
+        .box-swiper {
+            .swiper {
                 .box-link {
-                    position: relative;
-                    width: auto;
-                    height: 100%;
-                    margin: 0;
-                    .foto {
-                        width: 100%;
-                        border-radius: 12px;
-                    }
-                    .shadow-top {
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25) inset;
-                        border-radius: 12px;
-                        top: 0;
-                        left: 0;
-                        background-image: url("../../../public/Assets/NavigasiDivisi/Texture.png");
-                    }
-                    .shadow-divisi {
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        border-radius: 12px;
-                        bottom: 0;
-                        left: 0;
-                    }
                     .info-divisi {
-                        position: absolute;
-                        width: 92%;
-                        height: 30%;
-                        border-radius: 12px;
-                        bottom: 0;
-                        left: 0;
-    
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: flex-end;
-    
-                        margin: 16px 16px 20px;
-                        
                         .box {
-                            display: flex;
-                            justify-content: space-between;
-    
-                            margin-bottom: 18px;
-    
                             .box-text {
-                                line-height: normal;
                                 .divisi {
-                                    font-family: DM Sans;
-                                    font-size: 16px;
-                                    font-style: normal;
-                                    font-weight: 400;
-                                    line-height: normal;
-        
-                                    text-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25) inset;
-                                    background: var(--white, linear-gradient(180deg, #F7F7F7 0%, #DBDBDB 100%));
-                                    background-clip: text;
-                                    -webkit-background-clip: text;
-                                    -webkit-text-fill-color: transparent;
-    
-                                    margin: 0;
+                                    font-size: 20px;
                                 }
                                 .nama {
-                                    font-family: DM Sans;
-                                    font-size: 24px;
-                                    font-style: normal;
-                                    font-weight: 700;
-                                    line-height: normal;
-                                    
-                                    text-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25) inset;
-                                    background: var(--white, linear-gradient(180deg, #F7F7F7 0%, #DBDBDB 100%));
-                                    background-clip: text;
-                                    -webkit-background-clip: text;
-                                    -webkit-text-fill-color: transparent;
-    
-                                    margin: 0;
+                                    font-size: 28px;
                                 }
                             }
                             .box-logo {
-                                width: 52px;
-                                height: 52px;
-                                display: flex;
-                                align-items: center;
-                                padding: 4px;
-        
-                                background-color: rgba(255, 255, 255, 0.70);
-                                box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.25);
-                                backdrop-filter: blur(4px);
-                                border-radius: 62px;
-    
-                                margin: auto 0;
-        
-                                .logo {
-                                    width: 48px;
-                                    height: 48px;
-                                    margin: auto;
-                                }
+                                width: 72px;
+                                height: 72px;
                             }
-                        } 
-                        .job {
-                            font-family: DM Sans;
-                            font-size: 12px;
-                            font-style: normal;
-                            font-weight: 500;
-                            line-height: normal;
-    
-                            background: var(--white, linear-gradient(180deg, #F7F7F7 0%, #DBDBDB 100%));
-                            background-clip: text;
-                            -webkit-background-clip: text;
-                            -webkit-text-fill-color: transparent;
-                            margin: 0;
                         }
+                        .job {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// WIDTH <= 810 dan > 600
+@media screen and (max-width: 809px) {
+    .NavigasiDivisi {
+        padding: 0 48px 10rem;
+        .box-swiper {
+            display: none;
+        }
+        .box-grid {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 8px;
+
+            margin-top: 24px;
+            margin-bottom: 5vw;
+
+            .box-link {
+                position: relative;
+                width: auto;
+                height: 100%;
+                margin: 0;
+                .foto {
+                    width: 100%;
+                    border-radius: 12px;
+                }
+                .shadow-top {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25) inset;
+                    border-radius: 12px;
+                    top: 0;
+                    left: 0;
+                    background-image: url("../../../public/Assets/NavigasiDivisi/Texture.png");
+                }
+                .shadow-divisi {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 12px;
+                    bottom: 0;
+                    left: 0;
+                }
+                .info-divisi {
+                    position: absolute;
+                    width: 89%;
+                    height: 20%;
+                    border-radius: 12px;
+                    bottom: 0;
+                    left: 0;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+
+                    margin: 16px 16px 20px;
+                    
+                    .box {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .box-text {
+                            line-height: normal;
+                            .divisi {
+                                font-family: DM Sans;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+    
+                                text-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25) inset;
+                                background: var(--white, linear-gradient(180deg, #F7F7F7 0%, #DBDBDB 100%));
+                                background-clip: text;
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+
+                                margin: 0;
+                            }
+                            .nama {
+                                font-family: DM Sans;
+                                font-size: 24px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                                
+                                text-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25) inset;
+                                background: var(--white, linear-gradient(180deg, #F7F7F7 0%, #DBDBDB 100%));
+                                background-clip: text;
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+
+                                margin: 0;
+                            }
+                        }
+                        .box-logo {
+                            width: 52px;
+                            height: 52px;
+                            display: flex;
+                            align-items: center;
+                            padding: 4px;
+    
+                            background-color: rgba(255, 255, 255, 0.70);
+                            box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.25);
+                            backdrop-filter: blur(4px);
+                            border-radius: 62px;
+
+                            margin: auto 0;
+    
+                            .logo {
+                                width: 48px;
+                                height: 48px;
+                                margin: auto;
+                            }
+                        }
+                    } 
+                    .job {
+                        font-family: DM Sans;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+
+                        background: var(--white, linear-gradient(180deg, #F7F7F7 0%, #DBDBDB 100%));
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// WIDTH <= 600 dan > 432
+@media screen and (max-width: 600px) {
+    .NavigasiDivisi {
+        padding: 0 48px 10rem;
+        .box-swiper {
+            display: none;
+        }
+        .box-grid {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 8px;
+
+            margin-top: 24px;
+            margin-bottom: 5vw;
+
+            .box-link {
+                position: relative;
+                width: auto;
+                height: 100%;
+                margin: 0;
+                .foto {
+                    width: 100%;
+                    border-radius: 12px;
+                }
+                .shadow-top {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25) inset;
+                    border-radius: 12px;
+                    top: 0;
+                    left: 0;
+                    background-image: url("../../../public/Assets/NavigasiDivisi/Texture.png");
+                }
+                .shadow-divisi {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 12px;
+                    bottom: 0;
+                    left: 0;
+                }
+                .info-divisi {
+                    position: absolute;
+                    width: 89%;
+                    height: 20%;
+                    border-radius: 12px;
+                    bottom: 0;
+                    left: 0;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+
+                    margin: 16px 16px 20px;
+                    
+                    .box {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .box-text {
+                            line-height: normal;
+                            margin-top: auto;
+                            margin-bottom: auto;
+
+                            .divisi {
+                                font-family: DM Sans;
+                                font-size: 8px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+    
+                                text-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25) inset;
+                                background: var(--white, linear-gradient(180deg, #F7F7F7 0%, #DBDBDB 100%));
+                                background-clip: text;
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+
+                                margin: 0;
+                            }
+                            .nama {
+                                font-family: DM Sans;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                                
+                                text-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25) inset;
+                                background: var(--white, linear-gradient(180deg, #F7F7F7 0%, #DBDBDB 100%));
+                                background-clip: text;
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+
+                                margin: 0;
+                            }
+                        }
+                        .box-logo {
+                            width: 42px;
+                            height: 42px;
+                            display: flex;
+                            align-items: center;
+                            padding: 2px;
+    
+                            background-color: rgba(255, 255, 255, 0.70);
+                            box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.25);
+                            backdrop-filter: blur(4px);
+                            border-radius: 62px;
+
+                            margin: auto 0;
+    
+                            .logo {
+                                width: 38px;
+                                height: 38px;
+                                margin: auto;
+                            }
+                        }
+                    } 
+                    .job {
+                        font-family: DM Sans;
+                        font-size: 8px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+
+                        background: var(--white, linear-gradient(180deg, #F7F7F7 0%, #DBDBDB 100%));
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        margin: 0;
                     }
                 }
             }
@@ -395,132 +563,131 @@
         width: 92%;
         margin: 0;
         padding: 0 16px;
-        .konten {
-            .box-swiper {
-                display: none;
-            }
-            .box-grid {
-                display: grid;
-                grid-template-columns: auto;
-                gap: 8px;
+        
+        .box-swiper {
+            display: none;
+        }
+        .box-grid {
+            display: grid;
+            grid-template-columns: auto;
+            gap: 8px;
 
-                margin-top: 16px;
-                margin-bottom: 5vw;
+            margin-top: 16px;
+            margin-bottom: 5vw;
 
-                .box-link {
-                    position: relative;
-                    width: auto;
+            .box-link {
+                position: relative;
+                width: auto;
+                height: 100%;
+                margin: 0;
+                .foto {
+                    width: 100%;
+                    border-radius: 12px;
+                }
+                .shadow-top {
+                    position: absolute;
+                    width: 100%;
                     height: 100%;
-                    margin: 0;
-                    .foto {
-                        width: 100%;
-                        border-radius: 12px;
-                    }
-                    .shadow-top {
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25) inset;
-                        border-radius: 12px;
-                        top: 0;
-                        left: 0;
-                        background-image: url("../../../public/Assets/NavigasiDivisi/Texture.png");
-                    }
-                    .shadow-divisi {
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        border-radius: 12px;
-                        bottom: 0;
-                        left: 0;
-                    }
-                    .info-divisi {
-                        position: absolute;
-                        width: 92%;
-                        height: 30%;
-                        border-radius: 12px;
-                        bottom: 0;
-                        left: 0;
-    
+                    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25) inset;
+                    border-radius: 12px;
+                    top: 0;
+                    left: 0;
+                    background-image: url("../../../public/Assets/NavigasiDivisi/Texture.png");
+                }
+                .shadow-divisi {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 12px;
+                    bottom: 0;
+                    left: 0;
+                }
+                .info-divisi {
+                    position: absolute;
+                    width: 92%;
+                    height: 30%;
+                    border-radius: 12px;
+                    bottom: 0;
+                    left: 0;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+
+                    margin: 16px 16px 20px;
+                    
+                    .box {
                         display: flex;
-                        flex-direction: column;
-                        justify-content: flex-end;
-    
-                        margin: 16px 16px 20px;
-                        
-                        .box {
-                            display: flex;
-                            justify-content: space-between;
-    
-                            margin-bottom: 18px;
-    
-                            .box-text {
-                                line-height: normal;
-                                .divisi {
-                                    font-family: DM Sans;
-                                    font-size: 16px;
-                                    font-style: normal;
-                                    font-weight: 400;
-                                    line-height: normal;
-        
-                                    text-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25) inset;
-                                    background: var(--white, linear-gradient(180deg, #F7F7F7 0%, #DBDBDB 100%));
-                                    background-clip: text;
-                                    -webkit-background-clip: text;
-                                    -webkit-text-fill-color: transparent;
-    
-                                    margin: 0;
-                                }
-                                .nama {
-                                    font-family: DM Sans;
-                                    font-size: 24px;
-                                    font-style: normal;
-                                    font-weight: 700;
-                                    line-height: normal;
-                                    
-                                    text-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25) inset;
-                                    background: var(--white, linear-gradient(180deg, #F7F7F7 0%, #DBDBDB 100%));
-                                    background-clip: text;
-                                    -webkit-background-clip: text;
-                                    -webkit-text-fill-color: transparent;
-    
-                                    margin: 0;
-                                }
-                            }
-                            .box-logo {
-                                width: 52px;
-                                height: 52px;
-                                display: flex;
-                                align-items: center;
-                                padding: 4px;
-        
-                                background-color: rgba(255, 255, 255, 0.70);
-                                box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.25);
-                                backdrop-filter: blur(4px);
-                                border-radius: 62px;
-    
-                                margin: auto 0;
-        
-                                .logo {
-                                    width: 48px;
-                                    height: 48px;
-                                    margin: auto;
-                                }
-                            }
-                        } 
-                        .job {
-                            font-family: DM Sans;
-                            font-size: 12px;
-                            font-style: normal;
-                            font-weight: 500;
+                        justify-content: space-between;
+
+                        margin-bottom: 18px;
+
+                        .box-text {
                             line-height: normal;
+                            .divisi {
+                                font-family: DM Sans;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
     
-                            background: var(--white, linear-gradient(180deg, #F7F7F7 0%, #DBDBDB 100%));
-                            background-clip: text;
-                            -webkit-background-clip: text;
-                            -webkit-text-fill-color: transparent;
-                            margin: 0;
+                                text-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25) inset;
+                                background: var(--white, linear-gradient(180deg, #F7F7F7 0%, #DBDBDB 100%));
+                                background-clip: text;
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+
+                                margin: 0;
+                            }
+                            .nama {
+                                font-family: DM Sans;
+                                font-size: 24px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                                
+                                text-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25) inset;
+                                background: var(--white, linear-gradient(180deg, #F7F7F7 0%, #DBDBDB 100%));
+                                background-clip: text;
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+
+                                margin: 0;
+                            }
                         }
+                        .box-logo {
+                            width: 52px;
+                            height: 52px;
+                            display: flex;
+                            align-items: center;
+                            padding: 4px;
+    
+                            background-color: rgba(255, 255, 255, 0.70);
+                            box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.25);
+                            backdrop-filter: blur(4px);
+                            border-radius: 62px;
+
+                            margin: auto 0;
+    
+                            .logo {
+                                width: 48px;
+                                height: 48px;
+                                margin: auto;
+                            }
+                        }
+                    } 
+                    .job {
+                        font-family: DM Sans;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+
+                        background: var(--white, linear-gradient(180deg, #F7F7F7 0%, #DBDBDB 100%));
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        margin: 0;
                     }
                 }
             }
