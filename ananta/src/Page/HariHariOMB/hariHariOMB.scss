@@ -72,16 +72,6 @@
     padding: 0;
 }
 
-.bg_container1 {
-    background: url('./BG1.png'), lightgray 0% 0% / 76.66666507720947px 76.66666507720947px repeat;
-
-}
-.bg_container2 {
-    // opacity: 0.2;
-    background: url('./BG2.png'), lightgray 50% / cover no-repeat;
-    width:100vw;
-}
-
 .hariHariOMB__section {
     // padding:0px 300px;
     // height: fit-content;
@@ -118,8 +108,13 @@
 
     }
     .hariHariOMB__aksesBox {
-        margin-top: 36px;
+        // margin-top: 36px;
         border-radius: 20px;
+        // position:sticky;
+        // top:20px;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 20px; 
         background: linear-gradient(144deg, rgba(146, 70, 59, 0.60) 0%, rgba(50, 29, 25, 0.60) 100%);
         box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.40);
         backdrop-filter: blur(50px);
