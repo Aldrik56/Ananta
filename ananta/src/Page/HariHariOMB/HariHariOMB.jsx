@@ -1,12 +1,31 @@
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import './hariHariOMB.scss';
 import hariPenetasan from './hariPenetasan.js';
 import hariPembentukan1 from './hariPembentukan1';
 import hariPembentukan2 from './hariPembentukan2';
 import TopInfo from "../../Components/TopInfo/TopInfo";
 import Heading from '../../Components/Heading/Heading';
+import { useParams, useNavigate } from 'react-router-dom';
 const HariHariOMB= (props)=> {
     const [day,setDay] = useState(props.id == null ? 0 : props.id);
+    const navigate = useNavigate();
+
+    const {hariID} = useParams();
+
+    useEffect(() => {
+        if(hariID == "hari-penetasan"){
+            setDay(0);
+        }else if(hariID == "hari-pembentukan-1"){
+            setDay(1);
+        }else if(hariID == "hari-pembentukan-2"){
+            setDay(2);
+        }else{
+            navigate("/");
+        }
+
+        console.log(day)
+    })
+
     const array = [
         {
             title : "Hari Penetasan",

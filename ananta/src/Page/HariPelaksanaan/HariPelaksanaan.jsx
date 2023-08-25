@@ -58,4 +58,5 @@ const HariPelaksanaan = () => {
   );
 };
 
+export default HariPelaksanaan;
 export { HariPelaksanaan };

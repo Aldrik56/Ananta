@@ -67,7 +67,13 @@ const router = createBrowserRouter([
     path: "/after-movie",
     element: <Page.AfterMovie />,
     errorElement: <ErrorPage />,
+
   },
+  {
+    path:"/hari-pelaksanaan/:hariID",
+    element: <Page.HariHariOMB />,
+    errorElement: <ErrorPage />,
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
