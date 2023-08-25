@@ -10,6 +10,7 @@ import "./FotoDivisi.scss";
 // IMPORT COMPONENTS
 import TopInfo from "../../Components/TopInfo/TopInfo";
 import HeadingLogo from "../../Components/HeadingLogo/HeadingLogo";
+import Navbar from '../../Components/Navbar/Navbar';
 
 const FotoDivisi = () => {
     const path = window.location.pathname;
@@ -139,6 +140,7 @@ const FotoDivisi = () => {
 
     return (
         <>
+        <Navbar />
             <div className="FotoDivisi">
                 <TopInfo />
                 { domain == "bimantara" ? (

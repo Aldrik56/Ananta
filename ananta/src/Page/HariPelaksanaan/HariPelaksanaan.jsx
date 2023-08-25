@@ -35,6 +35,7 @@ const HariPelaksanaan = () => {
 
   return (
     <>
+    <Navbar />
       <div className="HariPelaksanaan">
         <div className="pohon"></div>
         <TopInfo />

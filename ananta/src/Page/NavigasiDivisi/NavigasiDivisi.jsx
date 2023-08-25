@@ -10,10 +10,12 @@ import "./NavigasiDivisi.scss";
 // IMPORT COMPONENT
 import TopInfo from '../../Components/TopInfo/TopInfo';
 import Heading from '../../Components/Heading/Heading';
+import Navbar from '../../Components/Navbar/Navbar';
 
 const NavigasiDivisi = () => {
     return (
         <>
+          <Navbar />
             <div className="NavigasiDivisi">
                 <div className="konten">
                     <TopInfo />

@@ -17,7 +17,7 @@ function Navbar() {
     const path = resolvedPath.pathname;
     console.log(resolvedPath.pathname);
     const dropdownItems = [
-      { path: '/', text: 'Hari Pelaksanaan' },
+      { path: '/hari-pelaksanaan', text: 'Hari Pelaksanaan' },
       { path: '/behind-the-scene', text: 'Dibalik Kepanitiaan' },
       { path: '/divisi', text: 'Foto Divisi' },
       { path: '/sayembara', text: 'Sayembara Visual' },
@@ -37,61 +37,88 @@ function Navbar() {
   };
 
   return (
-    <div className="navbar">
-      <div className="dropdown">
-        {resolvedPath.pathname.startsWith('/divisi') && (
+    <>
+      <div className='desktop'>
+        {(resolvedPath.pathname.startsWith('/divisi-') || resolvedPath.pathname.startsWith('/hari-pelaksanaan/')) && (
           <button className="back-btn" onClick={handleBack}>
-            <img src="./Assets/Navbar/arrow-left.svg" alt="" />
+            <img src="/Assets/Navbar/arrow-left.svg" alt="" />
+            <p>Back</p>
           </button>
         )}
-        <button className="dropbtn">
-          {buttonText}
-          <input type="checkbox" id="checkbox" />
-          <label onClick={toggleDropdown} htmlFor="checkbox" className={`toggle ${isDropdownOpen ? 'active' : ''}`}>
-            <div className="bar bar--top"></div>
-            <div className="bar bar--middle"></div>
-            <div className="bar bar--bottom"></div>
-          </label>
-        </button>
-        <div className="dropdown-content" style={{ display: isDropdownOpen ? 'flex' : 'none' }}>
-          <a
-            className={`dropdown-link ${resolvedPath.pathname === '/' ? 'active' : ''}`}
-            href="/"
-          >
-            {resolvedPath.pathname === '/' && <img src="your-image-url-here" alt="" />}
-            <span>Hari Pelaksanaan</span>
-          </a>
-          <a
-            className={`dropdown-link ${resolvedPath.pathname === '/behind-the-scene' ? 'active' : ''}`}
-            href="/behind-the-scene"
-          >
-            {resolvedPath.pathname === '/behind-the-scene' && <img src="your-image-url-here" alt="" />}
-            <span>Dibalik Kepanitiaan</span>
-          </a>
-          <a
-            className={`dropdown-link ${resolvedPath.pathname === '/divisi' ? 'active' : ''}`}
-            href="/divisi"
-          >
-            {resolvedPath.pathname === '/divisi' && <img src="./Assets/Navbar/default-bullet.svg" alt="" />}
-            <span>Foto Divisi</span>
-          </a>
-          <a
-            className={`dropdown-link ${resolvedPath.pathname === '/sayembara' ? 'active' : ''}`}
-            href="/sayembara"
-          >
-            {resolvedPath.pathname === '/sayembara' && <img src="your-image-url-here" alt="" />}
-            <span>Sayembara Visual</span>
-          </a>
-          <a
-            className={`dropdown-link ${resolvedPath.pathname === '/after-movie#' ? 'active' : ''}`}
-            href="/after-movie#"
-          >
-            {resolvedPath.pathname === '/after-movie#' && <img src="your-image-url-here" alt="" />}
-            <span><i>After Movie</i></span>
-          </a>
+        <div className='nav-block'>
+          <div className='nav-link active'>
+            <a href="/">Hari Pelaksanaan</a>
+          </div>
+          <div className='nav-link'>
+            <a href="/dibalik-kepanitiaan">Dibalik Kepanitiaan</a>
+          </div>
+          <div className='nav-link'>
+            <a href="/divisi">Foto Divisi</a>
+          </div>
+          <div className='nav-link'>
+            <a href="/sayembara-visual">Sayembara Visual</a>
+          </div>
+          <div className='nav-link'>
+            <a href="/after-movie"><i>After Movie</i></a>
+          </div>
         </div>
       </div>
-    </div>
+      <div className="navbar">
+        <div className="dropdown">
+          {resolvedPath.pathname.startsWith('/divisi-') && (
+            <button className="back-btn" onClick={handleBack}>
+              <img src="./Assets/Navbar/arrow-left.svg" alt="" />
+            </button>
+          )}
+          <button className="dropbtn">
+            {buttonText}
+            <input type="checkbox" id="checkbox" />
+            <label onClick={toggleDropdown} htmlFor="checkbox" className={`toggle ${isDropdownOpen ? 'active' : ''}`}>
+              <div className="bar bar--top"></div>
+              <div className="bar bar--middle"></div>
+              <div className="bar bar--bottom"></div>
+            </label>
+          </button>
+          <div className="dropdown-content" style={{ display: isDropdownOpen ? 'flex' : 'none' }}>
+            <a
+              className={`dropdown-link ${resolvedPath.pathname === '/' ? 'active' : ''}`}
+              href="/"
+            >
+              {resolvedPath.pathname === '/' && <img src="your-image-url-here" alt="" />}
+              <span>Hari Pelaksanaan</span>
+            </a>
+            <a
+              className={`dropdown-link ${resolvedPath.pathname === '/behind-the-scene' ? 'active' : ''}`}
+              href="/behind-the-scene"
+            >
+              {resolvedPath.pathname === '/behind-the-scene' && <img src="your-image-url-here" alt="" />}
+              <span>Dibalik Kepanitiaan</span>
+            </a>
+            <a
+              className={`dropdown-link ${resolvedPath.pathname === '/divisi' ? 'active' : ''}`}
+              href="/divisi"
+            >
+              {resolvedPath.pathname === '/divisi' && <img src="./Assets/Navbar/default-bullet.svg" alt="" />}
+              <span>Foto Divisi</span>
+            </a>
+            <a
+              className={`dropdown-link ${resolvedPath.pathname === '/sayembara' ? 'active' : ''}`}
+              href="/sayembara"
+            >
+              {resolvedPath.pathname === '/sayembara' && <img src="your-image-url-here" alt="" />}
+              <span>Sayembara Visual</span>
+            </a>
+            <a
+              className={`dropdown-link ${resolvedPath.pathname === '/after-movie#' ? 'active' : ''}`}
+              href="/after-movie#"
+            >
+              {resolvedPath.pathname === '/after-movie#' && <img src="your-image-url-here" alt="" />}
+              <span><i>After Movie</i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 
