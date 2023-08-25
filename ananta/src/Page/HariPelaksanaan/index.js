@@ -1,1 +1,1 @@
-export { default as HariPelaksanaan } from "./HariPelaksanaan";
+export { HariPelaksanaan } from "./HariPelaksanaan";

@@ -35,11 +35,14 @@ const HariPelaksanaan = () => {
 
   return (
     <>
-    <Navbar />
+      <Navbar />
       <div className="HariPelaksanaan">
         <div className="pohon"></div>
         <TopInfo />
-        <Heading nama="Hari Pelaksanaan" job="Ini bakal jadi text bawahnya title yang intinya kea penjelasan lebih lanjut terkait titlenya gitu" />
+        <Heading
+          nama="Hari Pelaksanaan"
+          job="Ini bakal jadi text bawahnya title yang intinya kea penjelasan lebih lanjut terkait titlenya gitu"
+        />
         {/* <div className="heading">
           <div className="judul">
             <p className="nama">Hari Pelaksanaan</p>
@@ -48,7 +51,11 @@ const HariPelaksanaan = () => {
         </div> */}
         <div className="timeline">
           {hari.map((item) => (
-            <div className="timeline-card" style={{ backgroundImage: `linear-gradient(180deg, rgba(2,0,36,0) 65%, rgba(0,0,0,1) 100%), url(${item.img})` }}>
+            <div
+              className="timeline-card"
+              style={{
+                backgroundImage: `linear-gradient(180deg, rgba(2,0,36,0) 65%, rgba(0,0,0,1) 100%), url(${item.img})`,
+              }}>
               <div className="timeline-card-day">{item.hari}</div>
               <div className="timeline-card-title">{item.tema}</div>
             </div>
