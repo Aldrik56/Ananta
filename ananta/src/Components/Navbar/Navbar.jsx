@@ -46,13 +46,13 @@ function Navbar() {
         {resolvedPath.pathname.startsWith('/divisi-') && (
           <button className="back-btn" onClick={handleBackToDivisi}>
             <img src="/Assets/Navbar/arrow-left.svg" alt="" />
-            <p>Back</p>
+            <p>Kembali</p>
           </button>
         )}
         {resolvedPath.pathname.startsWith('/hari-pelaksanaan/') && (
           <button className="back-btn" onClick={handleBackToHariPelaksanaan}>
             <img src="/Assets/Navbar/arrow-left.svg" alt="" />
-            <p>Back</p>
+            <p>Kembali</p>
           </button>
         )}
         <div className='nav-block'>

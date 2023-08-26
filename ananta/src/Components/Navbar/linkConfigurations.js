@@ -108,7 +108,7 @@ const linkConfigurations = [
         path: '/divisi-kampana',
         element: (
             <div className="nav-link active kampana">
-                <a href="/">Foto Divisi</a>
+                <a href="/divisi">Foto Divisi</a>
             </div>
         ),
         bullet: (
@@ -120,7 +120,7 @@ const linkConfigurations = [
         path: '/divisi-arsa',
         element: (
             <div className="nav-link active arsa">
-                <a href="/">Foto Divisi</a>
+                <a href="/divisi">Foto Divisi</a>
             </div>
         ),
         bullet: (
@@ -132,7 +132,7 @@ const linkConfigurations = [
         path: '/divisi-adhyasta',
         element: (
             <div className="nav-link active adhyasta">
-                <a href="/">Foto Divisi</a>
+                <a href="/divisi">Foto Divisi</a>
             </div>
         ),
         bullet: (
@@ -144,7 +144,7 @@ const linkConfigurations = [
         path: '/divisi-syandana',
         element: (
             <div className="nav-link active syandana">
-                <a href="/">Foto Divisi</a>
+                <a href="/divisi">Foto Divisi</a>
             </div>
         ),
         bullet: (
@@ -156,7 +156,7 @@ const linkConfigurations = [
         path: '/divisi-sambara',
         element: (
             <div className="nav-link active sambara">
-                <a href="/">Foto Divisi</a>
+                <a href="/divisi">Foto Divisi</a>
             </div>
         ),
         bullet: (
@@ -168,7 +168,7 @@ const linkConfigurations = [
         path: '/divisi-dayaka',
         element: (
             <div className="nav-link active dayaka">
-                <a href="/">Foto Divisi</a>
+                <a href="/divisi">Foto Divisi</a>
             </div>
         ),
         bullet: (
@@ -180,7 +180,7 @@ const linkConfigurations = [
         path: '/divisi-sarwaga',
         element: (
             <div className="nav-link active sarwaga">
-                <a href="/">Foto Divisi</a>
+                <a href="/divisi">Foto Divisi</a>
             </div>
         ),
         bullet: (
@@ -192,7 +192,7 @@ const linkConfigurations = [
         path: '/divisi-prabangkara',
         element: (
             <div className="nav-link active prabangkara">
-                <a href="/">Foto Divisi</a>
+                <a href="/divisi">Foto Divisi</a>
             </div>
         ),
         bullet: (
@@ -204,7 +204,7 @@ const linkConfigurations = [
         path: '/divisi-wiskira',
         element: (
             <div className="nav-link active wiskira">
-                <a href="/">Foto Divisi</a>
+                <a href="/divisi">Foto Divisi</a>
             </div>
         ),
         bullet: (
