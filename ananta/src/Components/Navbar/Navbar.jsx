@@ -18,11 +18,11 @@ function Navbar() {
     const path = resolvedPath.pathname;
     const dropdownItems = [
       { path: '/hari-pelaksanaan', text: 'Hari Pelaksanaan' },
-      { path: '/behind-the-scene', text: 'Dibalik Kepanitiaan' },
+      { path: '/dibalik-kepanitiaan', text: 'Dibalik Kepanitiaan' },
       { path: '/divisi', text: 'Foto Divisi' },
-      { path: '/sayembara', text: 'Sayembara Visual' },
-      { path: '/after-movie#', text: 'After Movie' },
-    ];
+      { path: '/sayembara-visual', text: 'Sayembara Visual' },
+      { path: '/after-movie', text: <em style={{ fontStyle: 'italic' }}>After Movie</em> },
+    ];    
 
     const matchingItem = dropdownItems.find(item => path.startsWith(item.path)); // Use exact string comparison
     if (matchingItem) {
@@ -119,10 +119,10 @@ function Navbar() {
               <span>Hari Pelaksanaan</span>
             </a>
             <a
-              className={`dropdown-link ${resolvedPath.pathname === '/behind-the-scene' ? 'active' : ''}`}
-              href="/behind-the-scene"
+              className={`dropdown-link ${resolvedPath.pathname === '/dibalik-kepanitiaan' ? 'active' : ''}`}
+              href="/dibalik-kepanitiaan"
             >
-              {resolvedPath.pathname === '/behind-the-scene' && <div className='default-bullet'></div>}
+              {resolvedPath.pathname === '/dibalik-kepanitiaan' && <div className='default-bullet'></div>}
               <span>Dibalik Kepanitiaan</span>
             </a>
             <a
@@ -144,15 +144,15 @@ function Navbar() {
               <span>Foto Divisi</span>
             </a>
             <a
-              className={`dropdown-link ${resolvedPath.pathname === '/sayembara' ? 'active' : ''}`}
-              href="/sayembara"
+              className={`dropdown-link ${resolvedPath.pathname === '/sayembara-visual' ? 'active' : ''}`}
+              href="/sayembara-visual"
             >
-              {resolvedPath.pathname === '/sayembara' && <div className='default-bullet'></div>}
+              {resolvedPath.pathname === '/sayembara-visual' && <div className='default-bullet'></div>}
               <span>Sayembara Visual</span>
             </a>
             <a
-              className={`dropdown-link ${resolvedPath.pathname === '/after-movie#' ? 'active' : ''}`}
-              href="/after-movie#"
+              className={`dropdown-link ${resolvedPath.pathname === '/after-movie' ? 'active' : ''}`}
+              href="/after-movie"
             >
               {resolvedPath.pathname.startsWith('/after-movie') && <div className='default-bullet'></div>}
               <span><i>After Movie</i></span>
