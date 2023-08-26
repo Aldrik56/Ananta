@@ -7,14 +7,26 @@
     src: url("../../../public/Assets/Fonts/Chopper.ttf");
 }
 :root {
-    --bimantara:#1052B8;
-    --kampana:#B8110D;
-    --arsa: #FD7F9B;
+    --bimantara:#0F52BA;
+    --bimantaraLight: #4983DA;
+    --kampana: #BA110C;
+    --kampanaLight: #DD7A7A;
+    --arsa: #FE7F9C;
+    --arsaLight: #FFB8CB;
     --adhyasta: #000;
+    --adhyastaLight: #494949;
     --syandana: #4D4D4D;
-    --sambara: #9300D2;
-    --dayaka: #CBA78B;
-    --sarwaga: #41A76A;
+    --syandanaLight: #CCCCCC;
+    --sambara: #9400D3;
+    --sambaraLight: #CA66FF;
+    --dayaka: #CCA88C;
+    --dayakaLight: #F4D8C6;
+    --sarwaga: #40A86A;
+    --sarwagaLight: #78D69F;
+    --prabangkara: #FF6000;
+    --prabangkaraLight: #FF9966;
+    --wiskira: #E1AD01;
+    --wiskiraLight: #FFD469;
 }
 
 // WIDTH > 1440
@@ -207,7 +219,7 @@
         .swiper-pagination {
             position: absolute;
             bottom: -8%;
-            left: -47%;
+            left: -46%;
             // border: 2px solid red;
             
             .swiper-pagination-bullet {
@@ -228,7 +240,7 @@
         padding: 0 396px 10rem 120px;
         .box-swiper {
             .swiper-pagination {
-                left: -46.5%;
+                left: -45.5%;
             }
         }
         
@@ -254,7 +266,7 @@
                 margin: 0 auto;
             }
             .swiper-pagination {
-                left: -46%;
+                left: -45%;
             }
         }
     }
@@ -286,6 +298,9 @@
                         }
                     }
                 }
+            }
+            .swiper-pagination {
+                left: -43%;
             }
         }
     }

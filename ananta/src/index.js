@@ -54,6 +54,16 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
+    path: "/divisi-prabangkara",
+    element: <Page.FotoDivisi />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/divisi-wiskira",
+    element: <Page.FotoDivisi />,
+    errorElement: <ErrorPage />,
+  },
+  {
     path: "/hari-pelaksanaan",
     element: <Page.HariPelaksanaan />,
     errorElement: <ErrorPage />,

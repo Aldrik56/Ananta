@@ -197,6 +197,44 @@ const NavigasiDivisi = () => {
                                 </div>
                             </a>
                         </SwiperSlide>
+                        <SwiperSlide>
+                            <a className="box-link" href="/divisi-prabangkara">
+                                <img className="foto" src="./Assets/NavigasiDivisi/prabangkara.jpg" alt="" />
+                                <div className="shadow-top"></div>
+                                <div className="shadow-divisi" style={{ background: "linear-gradient(rgba(255,96,0,0), rgba(255,96,0,1)" }}></div>
+                                <div className="info-divisi">
+                                    <div className="box">
+                                        <div className="box-text">
+                                            <p className="divisi">Divisi</p>
+                                            <p className="nama">PRABANGKARA</p>
+                                        </div>
+                                        <div className="box-logo">
+                                            <img className="logo" src="./Assets/FotoDivisi/prabangkara/Logo.webp" alt="" />
+                                        </div>
+                                    </div>
+                                    <p className="job">Dokumentasi</p>
+                                </div>
+                            </a>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <a className="box-link" href="/divisi-wiskira">
+                                <img className="foto" src="./Assets/NavigasiDivisi/wiskira.jpg" alt="" />
+                                <div className="shadow-top"></div>
+                                <div className="shadow-divisi" style={{ background: "linear-gradient(rgba(225,173,1,0), rgba(225,173,1,1)" }}></div>
+                                <div className="info-divisi">
+                                    <div className="box">
+                                        <div className="box-text">
+                                            <p className="divisi">Divisi</p>
+                                            <p className="nama">WISKIRA</p>
+                                        </div>
+                                        <div className="box-logo">
+                                            <img className="logo" src="./Assets/FotoDivisi/wiskira/Logo.webp" alt="" />
+                                        </div>
+                                    </div>
+                                    <p className="job" style={{ fontStyle: "italic" }}>Website</p>
+                                </div>
+                            </a>
+                        </SwiperSlide>
                     </Swiper>
                     <div className="swiper-pagination" slot="pagination"></div>
                 </div>
@@ -335,6 +373,40 @@ const NavigasiDivisi = () => {
                                 </div>
                             </div>
                             <p className="job">Medis</p>
+                        </div>
+                    </a>
+                    <a className="box-link" href="/divisi-prabangkara">
+                        <img className="foto" src="./Assets/NavigasiDivisi/prabangkara.jpg" alt="" />
+                        <div className="shadow-top"></div>
+                        <div className="shadow-divisi" style={{ background: "linear-gradient(rgba(255,96,0,0), rgba(255,96,0,1)" }}></div>
+                        <div className="info-divisi">
+                            <div className="box">
+                                <div className="box-text">
+                                    <p className="divisi">Divisi</p>
+                                    <p className="nama">PRABANGKARA</p>
+                                </div>
+                                <div className="box-logo">
+                                    <img className="logo" src="./Assets/FotoDivisi/prabangkara/Logo.webp" alt="" />
+                                </div>
+                            </div>
+                            <p className="job">Dokumentasi</p>
+                        </div>
+                    </a>
+                    <a className="box-link" href="/divisi-wiskira">
+                        <img className="foto" src="./Assets/NavigasiDivisi/wiskira.jpg" alt="" />
+                        <div className="shadow-top"></div>
+                        <div className="shadow-divisi" style={{ background: "linear-gradient(rgba(225,173,1,0), rgba(225,173,1,1)" }}></div>
+                        <div className="info-divisi">
+                            <div className="box">
+                                <div className="box-text">
+                                    <p className="divisi">Divisi</p>
+                                    <p className="nama">WISKIRA</p>
+                                </div>
+                                <div className="box-logo">
+                                    <img className="logo" src="./Assets/FotoDivisi/wiskira/Logo.webp" alt="" />
+                                </div>
+                            </div>
+                            <p className="job" style={{ fontStyle: "italic" }}>Website</p>
                         </div>
                     </a>
                 </div>
