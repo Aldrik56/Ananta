@@ -16,7 +16,6 @@ function Navbar() {
 
   useEffect(() => {
     const path = resolvedPath.pathname;
-    console.log(resolvedPath.pathname);
     const dropdownItems = [
       { path: '/hari-pelaksanaan', text: 'Hari Pelaksanaan' },
       { path: '/behind-the-scene', text: 'Dibalik Kepanitiaan' },
@@ -81,29 +80,42 @@ function Navbar() {
         <div className="dropdown">
           {resolvedPath.pathname.startsWith('/divisi-') && (
             <button className="back-btn" onClick={handleBackToDivisi}>
-              <img src="./Assets/Navbar/arrow-left.svg" alt="" />
+              <img src="/Assets/Navbar/arrow-left.svg" alt="" />
             </button>
           )}
           {resolvedPath.pathname.startsWith('/hari-pelaksanaan/') && (
             <button className="back-btn" onClick={handleBackToHariPelaksanaan}>
-              <img src="./Assets/Navbar/arrow-left.svg" alt="" />
+              <img src="/Assets/Navbar/arrow-left.svg" alt="" />
             </button>
           )}
-          <button className="dropbtn">
-            {buttonText}
-            <input type="checkbox" id="checkbox" />
-            <label onClick={toggleDropdown} htmlFor="checkbox" className={`toggle ${isDropdownOpen ? 'active' : ''}`}>
-              <div className="bar bar--top"></div>
-              <div className="bar bar--middle"></div>
-              <div className="bar bar--bottom"></div>
-            </label>
-          </button>
+          {linkConfigurations.map(config => {
+            if (resolvedPath.pathname === config.path) {
+              return (
+                <button
+                  style={config.style}
+                  className="dropbtn"
+                  onClick={() => {
+                    toggleDropdown();
+                  }}
+                >
+                  {buttonText}
+                  <input type="checkbox" id="checkbox" checked={isDropdownOpen} onChange={() => { }} />
+                  <label htmlFor="checkbox" className={`toggle ${isDropdownOpen ? 'active' : ''}`}>
+                    <div className="bar bar--top"></div>
+                    <div className="bar bar--middle"></div>
+                    <div className="bar bar--bottom"></div>
+                  </label>
+                </button>
+              );
+            }
+            return null;
+          })}
           <div className="dropdown-content" style={{ display: isDropdownOpen ? 'flex' : 'none' }}>
             <a
-              className={`dropdown-link ${resolvedPath.pathname === '/' ? 'active' : ''}`}
+              className={`dropdown-link ${resolvedPath.pathname.startsWith('/hari-pelaksanaan') ? 'active' : ''}`}
               href="/hari-pelaksanaan"
             >
-              {resolvedPath.pathname === '/hari-pelaksanaan' && <span className='default-bullet'></span>}
+              {resolvedPath.pathname.startsWith('/hari-pelaksanaan') && <span className='default-bullet'></span>}
               <span>Hari Pelaksanaan</span>
             </a>
             <a
@@ -114,7 +126,7 @@ function Navbar() {
               <span>Dibalik Kepanitiaan</span>
             </a>
             <a
-              className={`dropdown-link ${resolvedPath.pathname === '/divisi' ? 'active' : ''}`}
+              className={`dropdown-link ${resolvedPath.pathname.startsWith('/divisi') ? 'active' : ''}`}
               href="/divisi"
             >
               {resolvedPath.pathname.startsWith('/divisi') && (
@@ -129,7 +141,6 @@ function Navbar() {
                   })}
                 </>
               )}
-
               <span>Foto Divisi</span>
             </a>
             <a
@@ -143,7 +154,7 @@ function Navbar() {
               className={`dropdown-link ${resolvedPath.pathname === '/after-movie#' ? 'active' : ''}`}
               href="/after-movie#"
             >
-              {resolvedPath.pathname === '/after-movie#' && <div className='default-bullet'></div>}
+              {resolvedPath.pathname.startsWith('/after-movie') && <div className='default-bullet'></div>}
               <span><i>After Movie</i></span>
             </a>
           </div>

@@ -6,6 +6,7 @@ const linkConfigurations = [
                 <a href="/divisi">Foto Divisi</a>
             </div>
         ),
+        style: { background: 'var(--default-button)' }
     },
     {
         path: '/hari-pelaksanaan',
@@ -14,6 +15,7 @@ const linkConfigurations = [
                 <a href="/divisi">Foto Divisi</a>
             </div>
         ),
+        style: { background: 'var(--default-button)' }
     },
     {
         path: '/hari-pelaksanaan/hari-penetasan',
@@ -22,6 +24,7 @@ const linkConfigurations = [
                 <a href="/divisi">Foto Divisi</a>
             </div>
         ),
+        style: { background: 'var(--default-button)' }
     },
     {
         path: '/hari-pelaksanaan/hari-pembentukan-1',
@@ -30,6 +33,7 @@ const linkConfigurations = [
                 <a href="/divisi">Foto Divisi</a>
             </div>
         ),
+        style: { background: 'var(--default-button)' }
     },
     {
         path: '/hari-pelaksanaan/hari-pembentukan-2',
@@ -38,6 +42,7 @@ const linkConfigurations = [
                 <a href="/divisi">Foto Divisi</a>
             </div>
         ),
+        style: { background: 'var(--default-button)' }
     },
     {
         path: '/hari-pelaksanaan/kuliah-perdana',
@@ -46,6 +51,7 @@ const linkConfigurations = [
                 <a href="/divisi">Foto Divisi</a>
             </div>
         ),
+        style: { background: 'var(--default-button)' }
     },
     {
         path: '/dibalik-kepanitiaan',
@@ -54,6 +60,7 @@ const linkConfigurations = [
                 <a href="/divisi">Foto Divisi</a>
             </div>
         ),
+        style: { background: 'var(--default-button)' }
     },
     {
         path: '/sayembara',
@@ -62,6 +69,7 @@ const linkConfigurations = [
                 <a href="/divisi">Foto Divisi</a>
             </div>
         ),
+        style: { background: 'var(--default-button)' }
     },
     {
         path: '/after-movie',
@@ -70,6 +78,7 @@ const linkConfigurations = [
                 <a href="/divisi">Foto Divisi</a>
             </div>
         ),
+        style: { background: 'var(--default-button)' }
     },
     {
         path: '/divisi',
@@ -81,6 +90,7 @@ const linkConfigurations = [
         bullet: (
             <div className="default-bullet"></div>
         ),
+        style: { background: 'var(--default-button)' }
     },
     {
         path: '/divisi-bimantara',
@@ -92,6 +102,7 @@ const linkConfigurations = [
         bullet: (
             <div className="bimantara-bullet"></div>
         ),
+        style: { background: 'var(--bimantara-button)' }
     },
     {
         path: '/divisi-kampana',
@@ -103,6 +114,7 @@ const linkConfigurations = [
         bullet: (
             <div className="kampana-bullet"></div>
         ),
+        style: { background: 'var(--kampana-button)' }
     },
     {
         path: '/divisi-arsa',
@@ -114,6 +126,7 @@ const linkConfigurations = [
         bullet: (
             <div className="arsa-bullet"></div>
         ),
+        style: { background: 'var(--arsa-button)' }
     },
     {
         path: '/divisi-adhyasta',
@@ -125,6 +138,7 @@ const linkConfigurations = [
         bullet: (
             <div className="adhyasta-bullet"></div>
         ),
+        style: { background: 'var(--adhyasta-button)' }
     },
     {
         path: '/divisi-syandana',
@@ -136,6 +150,7 @@ const linkConfigurations = [
         bullet: (
             <div className="syandana-bullet"></div>
         ),
+        style: { background: 'var(--syandana-button)' }
     },
     {
         path: '/divisi-sambara',
@@ -147,6 +162,7 @@ const linkConfigurations = [
         bullet: (
             <div className="sambara-bullet"></div>
         ),
+        style: { background: 'var(--sambara-button)' }
     },
     {
         path: '/divisi-dayaka',
@@ -158,6 +174,7 @@ const linkConfigurations = [
         bullet: (
             <div className="dayaka-bullet"></div>
         ),
+        style: { background: 'var(--dayaka-button)' }
     },
     {
         path: '/divisi-sarwaga',
@@ -169,6 +186,7 @@ const linkConfigurations = [
         bullet: (
             <div className="sarwaga-bullet"></div>
         ),
+        style: { background: 'var(--sarwaga-button)' }
     },
     {
         path: '/divisi-prabangkara',
@@ -180,6 +198,7 @@ const linkConfigurations = [
         bullet: (
             <div className="prabangkara-bullet"></div>
         ),
+        style: { background: 'var(--prabangkara-button)' }
     },
     {
         path: '/divisi-wiskira',
@@ -191,6 +210,7 @@ const linkConfigurations = [
         bullet: (
             <div className="wiskira-bullet"></div>
         ),
+        style: { background: 'var(--wiskira-button)' }
     },
 ];
 
