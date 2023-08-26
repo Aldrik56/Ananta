@@ -20,9 +20,14 @@
   --sarwaga: #41a76a;
 }
 
+.route {
+  position: relative;
+  z-index: 2;
+}
+
 body {
   /* background: url("../public/Assets/FotoDivisi/Background1920.svg"); */
-  margin: 0; 
+  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
