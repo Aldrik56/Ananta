@@ -212,7 +212,7 @@
 .comingsoon {
     position: fixed;
     z-index: 999;
-    padding-top: 100px;
+    padding-top: 5%;
     left: 0;
     top: 0;
     width: 100%;
@@ -299,7 +299,7 @@
     .comingsoon {
         position: fixed;
         z-index: 999;
-        padding-top: 100px;
+        padding-top: 5%;
         left: 0;
         top: 0;
         width: 100%;
@@ -333,7 +333,7 @@
     .comingsoon {
         position: fixed;
         z-index: 999;
-        padding-top: 100px;
+        padding-top: 10%;
         left: 0;
         top: 0;
         width: 100%;
@@ -444,7 +444,7 @@
     .comingsoon {
         position: fixed;
         z-index: 999;
-        padding-top: 100px;
+        padding-top: 20%;
         left: 0;
         top: 0;
         width: 100%;
@@ -461,7 +461,7 @@
             height: auto;
 
             .foto {
-                width: 350px;
+                width: 400px;
                 margin: auto;
             }
         }
@@ -565,7 +565,7 @@
     .comingsoon {
         position: fixed;
         z-index: 999;
-        padding-top: 100px;
+        padding-top: 55%;
         left: 0;
         top: 0;
         width: 100%;
@@ -576,13 +576,15 @@
         
         .modal-content {
             display: flex;
+            justify-content: center;
+            align-items: center;
             color: white;
             font-family: 'Baloo 2', cursive;
             width: auto;
             height: auto;
 
             .foto {
-                width: 280px;
+                width: 300px;
                 margin: auto;
             }
         }
