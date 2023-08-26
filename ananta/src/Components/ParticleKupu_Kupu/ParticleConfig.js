@@ -26,7 +26,7 @@ export const ParticleConfig = {
           height: 100,
         },
         {
-          src: "https://cdn.discordapp.com/attachments/1133328017410764891/1144940527846948895/kupu_1.png",
+          src: "https://cdn.discordapp.com/attachments/1133328017410764891/1145007984171294801/kupu_1_1.png",
           width: 100,
           height: 100,
         },
