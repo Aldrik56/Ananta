@@ -1,16 +1,17 @@
 import { useRouteError } from "react-router-dom";
 
+import Heading from "./Components/Heading/Heading";
+
 export default function ErrorPage() {
   const error = useRouteError();
   console.error(error);
 
   return (
     <div id="error-page">
-      <h1>Oops!</h1>
-      <p>Sorry, an unexpected error has occurred.</p>
-      <p>
-        <i>{error.statusText || error.message}</i>
-      </p>
+        <Heading
+          nama="Salah"
+          job="Ini bakal jadi text bawahnya title yang intinya kea penjelasan lebih lanjut terkait titlenya gitu"
+        />
     </div>
   );
 }
