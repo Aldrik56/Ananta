@@ -179,7 +179,7 @@ const NavigasiDivisi = () => {
                             </a>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <a className="box-link" href="/divisi-bimantara">
+                            <a className="box-link" href="/divisi-sarwaga">
                                 <img className="foto" src="./Assets/NavigasiDivisi/Sarwaga.jpg" alt="" />
                                 <div className="shadow-top"></div>
                                 <div className="shadow-divisi" style={{ background: "linear-gradient(rgba(65,167,106,0), rgba(65,167,106, 1)" }}></div>
@@ -320,7 +320,7 @@ const NavigasiDivisi = () => {
                             <p className="job">Konsumsi</p>
                         </div>
                     </a>
-                    <a className="box-link" href="/divisi-bimantara">
+                    <a className="box-link" href="/divisi-sarwaga">
                         <img className="foto" src="./Assets/NavigasiDivisi/Sarwaga.jpg" alt="" />
                         <div className="shadow-top"></div>
                         <div className="shadow-divisi" style={{ background: "linear-gradient(rgba(65,167,106,0), rgba(65,167,106, 1)" }}></div>
