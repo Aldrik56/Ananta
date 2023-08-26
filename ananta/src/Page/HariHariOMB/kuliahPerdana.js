@@ -1,4 +1,4 @@
-const hariPembentukan1 = [
+const kuliahPedana = [
     {
         id:1,
         nama:'Dokumen Hari Penetasan',
@@ -56,4 +56,4 @@ const hariPembentukan1 = [
     }
 ]
 
-export default hariPembentukan1;
+export default kuliahPedana;

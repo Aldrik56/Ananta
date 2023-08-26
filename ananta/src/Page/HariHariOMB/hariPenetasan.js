@@ -1,5 +1,3 @@
-
-
 const hariPenetasan = [
     {
         id:1,
