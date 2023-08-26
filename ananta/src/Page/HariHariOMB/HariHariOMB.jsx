@@ -92,6 +92,7 @@ const HariHariOMB = () => {
                     <img src={array[day].asset[10].img} class="photo19" alt="" />
                     <img src={array[day].asset[10].img} class="photo20" alt="" />
                 </div>
+                
             </div>
         </>
 

@@ -47,10 +47,12 @@
         width: 100%;
         margin: 0;
         margin-top: 36px;
+        margin-bottom: 100px;
 
         .swiper {
             width: 100%;
-            aspect-ratio: 16/9;
+            height: 680px;
+            // aspect-ratio: 16/9;
             border-radius: 20px;
             margin: 0;
             background-color: transparent;
@@ -224,12 +226,12 @@
 @media screen and (max-width: 1439px) {
     .NavigasiDivisi {
         padding: 0 396px 10rem 120px;
-
         .box-swiper {
             .swiper-pagination {
                 left: -46.5%;
             }
         }
+        
     }
 }
 
