@@ -21,7 +21,7 @@
 .FotoDivisi {
     display: flex;
     flex-direction: column;
-    padding: 0 300px;
+    padding: 0 300px 10rem;
     margin: auto;
     background-image: url("../../../public/Assets/FotoDivisi/Background1920.svg");
 
@@ -211,7 +211,7 @@
 // MODAL
 .comingsoon {
     position: fixed;
-    z-index: 5;
+    z-index: 999;
     padding-top: 100px;
     left: 0;
     top: 0;
@@ -234,7 +234,6 @@
         }
     }
 }
-
 
 // WIDTH 1919 - 1440
 @media screen and (max-width: 1440px) {
@@ -295,12 +294,66 @@
             }
         }
     }
+
+    // MODAL
+    .comingsoon {
+        position: fixed;
+        z-index: 999;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+        
+        .modal-content {
+            display: flex;
+            color: white;
+            font-family: 'Baloo 2', cursive;
+            width: auto;
+            height: auto;
+
+            .foto {
+                width: 700px;
+                margin: auto;
+            }
+        }
+    }
 }
 
 // WIDTH 1439 - 1200
 @media screen and (max-width: 1200px) {
     .FotoDivisi {
         padding: 0 120px;
+    }
+
+    // MODAL
+    .comingsoon {
+        position: fixed;
+        z-index: 999;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+        
+        .modal-content {
+            display: flex;
+            color: white;
+            font-family: 'Baloo 2', cursive;
+            width: auto;
+            height: auto;
+
+            .foto {
+                width: 600px;
+                margin: auto;
+            }
+        }
     }
 }
 
@@ -383,6 +436,33 @@
                 .foto {
                     border-radius: 12px;
                 }
+            }
+        }
+    }
+
+    // MODAL
+    .comingsoon {
+        position: fixed;
+        z-index: 999;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+        
+        .modal-content {
+            display: flex;
+            color: white;
+            font-family: 'Baloo 2', cursive;
+            width: auto;
+            height: auto;
+
+            .foto {
+                width: 350px;
+                margin: auto;
             }
         }
     }
@@ -477,6 +557,33 @@
                 .foto {
                     border-radius: 8px;
                 }
+            }
+        }
+    }
+
+    // MODAL
+    .comingsoon {
+        position: fixed;
+        z-index: 999;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+        
+        .modal-content {
+            display: flex;
+            color: white;
+            font-family: 'Baloo 2', cursive;
+            width: auto;
+            height: auto;
+
+            .foto {
+                width: 280px;
+                margin: auto;
             }
         }
     }
