@@ -1,7 +1,3 @@
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-
 import "./AfterMovie.scss";
 import Navbar from "../../Components/Navbar/Navbar";
 import TopInfo from "../../Components/TopInfo/TopInfo";

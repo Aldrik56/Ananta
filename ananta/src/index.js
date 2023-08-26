@@ -73,6 +73,11 @@ const router = createBrowserRouter([
     path:"/hari-pelaksanaan/:hariID",
     element: <Page.HariHariOMB />,
     errorElement: <ErrorPage />,
+  },
+  {
+    path:"/dibalik-kepanitiaan",
+    element: <Page.DibalikKepanitiaan />,
+    errorElement: <ErrorPage />,
   }
 ]);
 
