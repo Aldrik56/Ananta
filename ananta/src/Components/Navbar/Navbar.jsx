@@ -1,16 +1,42 @@
 import React, { useState, useEffect } from 'react';
 import { useResolvedPath, useNavigate } from 'react-router-dom';
 import './Navbar.scss';
-import linkConfigurations from './linkConfigurations'; // Use the exact case
+import linkConfigurations from './linkConfigurations';
 
 function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [buttonText, setButtonText] = useState('Dropdown'); // Initial button text
+  const [buttonText, setButtonText] = useState('Dropdown');
   const navigate = useNavigate();
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
+
+  const [wider, setWider] = useState(false);
+
+  const checkWidth = () => {
+    if (
+      resolvedPath.pathname === "/hari-pelaksanaan" ||
+      resolvedPath.pathname === "/divisi" ||
+      resolvedPath.pathname === "/after-movie"
+    ) {
+      if (window.innerWidth > 1200) {
+        setWider(true);
+      } else {
+        setWider(false);
+      }
+    }
+  };
+
+  useEffect(() => {
+    checkWidth();
+
+    window.addEventListener("resize", checkWidth);
+
+    return () => {
+      window.removeEventListener("resize", checkWidth);
+    };
+  }, []);
 
   const resolvedPath = useResolvedPath();
 
@@ -22,7 +48,7 @@ function Navbar() {
       { path: '/divisi', text: 'Foto Divisi' },
       { path: '/sayembara-visual', text: 'Sayembara Visual' },
       { path: '/after-movie', text: <em style={{ fontStyle: 'italic' }}>After Movie</em> },
-    ];    
+    ];
 
     const matchingItem = dropdownItems.find(item => path.startsWith(item.path)); // Use exact string comparison
     if (matchingItem) {
@@ -42,7 +68,7 @@ function Navbar() {
 
   return (
     <>
-      <div className='desktop'>
+      <div className={`desktop ${wider ? 'wider' : ''}`}>
         {resolvedPath.pathname.startsWith('/divisi-') && (
           <button className="back-btn" onClick={handleBackToDivisi}>
             <img src="/Assets/Navbar/arrow-left.svg" alt="" />
@@ -100,7 +126,7 @@ function Navbar() {
                 >
                   {buttonText}
                   <input type="checkbox" id="checkbox" checked={isDropdownOpen} onChange={() => { }} />
-                  <label htmlFor="checkbox" className={`toggle ${isDropdownOpen ? 'active' : ''}`}>
+                  <label className={`toggle ${isDropdownOpen ? 'active' : ''}`}>
                     <div className="bar bar--top"></div>
                     <div className="bar bar--middle"></div>
                     <div className="bar bar--bottom"></div>
