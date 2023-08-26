@@ -31,6 +31,11 @@
   gap: 12px;
   width: 100%;
 
+  &.wider{
+    width: inherit;
+    padding-left: 120px;
+  }
+
   .back-btn {
     aspect-ratio: initial;
     display: flex;
@@ -45,6 +50,7 @@
     gap: 10px;
     align-self: stretch;
     border: none;
+    cursor: pointer;
 
     p {
       color: #000;
@@ -167,6 +173,11 @@
     gap: 8px;
     width: 100%;
 
+    &.wider{
+      width: inherit;
+      padding-left: 120px;
+    }
+
     .back-btn {
       aspect-ratio: initial;
       display: flex;
@@ -249,6 +260,38 @@
 
         &.arsa {
           background: var(--arsa-button);
+        }
+
+        &.bimantara {
+          background: var(--bimantara-button);
+        }
+
+        &.dayaka {
+          background: var(--dayaka-button);
+        }
+
+        &.kampana {
+          background: var(--kampana-button);
+        }
+
+        &.prabangkara {
+          background: var(--prabangkara-button);
+        }
+
+        &.sambara {
+          background: var(--sambara-button);
+        }
+
+        &.sarwaga {
+          background: var(--sarwaga-button);
+        }
+
+        &.syandana {
+          background: var(--syandana-button);
+        }
+
+        &.wiskira {
+          background: var(--wiskira-button);
         }
       }
     }
@@ -444,6 +487,46 @@
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
+
+        &.adhyasta {
+          background: var(--adhyasta-button);
+        }
+
+        &.arsa {
+          background: var(--arsa-button);
+        }
+
+        &.bimantara {
+          background: var(--bimantara-button);
+        }
+
+        &.dayaka {
+          background: var(--dayaka-button);
+        }
+
+        &.kampana {
+          background: var(--kampana-button);
+        }
+
+        &.prabangkara {
+          background: var(--prabangkara-button);
+        }
+
+        &.sambara {
+          background: var(--sambara-button);
+        }
+
+        &.sarwaga {
+          background: var(--sarwaga-button);
+        }
+
+        &.syandana {
+          background: var(--syandana-button);
+        }
+
+        &.wiskira {
+          background: var(--wiskira-button);
+        }
       }
     }
   }
@@ -546,6 +629,46 @@
           background-clip: text;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
+        }
+
+        &.adhyasta {
+          background: var(--adhyasta-button);
+        }
+
+        &.arsa {
+          background: var(--arsa-button);
+        }
+
+        &.bimantara {
+          background: var(--bimantara-button);
+        }
+
+        &.dayaka {
+          background: var(--dayaka-button);
+        }
+
+        &.kampana {
+          background: var(--kampana-button);
+        }
+
+        &.prabangkara {
+          background: var(--prabangkara-button);
+        }
+
+        &.sambara {
+          background: var(--sambara-button);
+        }
+
+        &.sarwaga {
+          background: var(--sarwaga-button);
+        }
+
+        &.syandana {
+          background: var(--syandana-button);
+        }
+
+        &.wiskira {
+          background: var(--wiskira-button);
         }
       }
     }
