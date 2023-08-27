@@ -51,6 +51,7 @@
                     align-items: center;
                     padding: 0;
                     border-radius: 20px;
+                    overflow: hidden;
                     .background {
                         position: absolute;
                         width: 100%;
@@ -518,7 +519,7 @@
                             margin-top: 115%;
                         }
                         .first, .last {
-                            font-size: 20px;
+                            font-size: 16px;
                         }
                         .job {
                             font-size: 14px;
@@ -567,8 +568,16 @@
             position: relative;
 
             .swiper {
+                gap: 100px;
                 .swiper-wrapper {
                     .swiper-slide {
+                        border-radius: 12px;
+                        .background {
+                            border-radius: 12px;
+                        }
+                        .shadow {
+                            border-radius: 12px;
+                        }
                         .logo {
                             position: absolute;
                             width: 32px;
@@ -753,6 +762,13 @@
             .swiper {
                 .swiper-wrapper {
                     .swiper-slide {
+                        border-radius: 8px;
+                        .background {
+                            border-radius: 8px;
+                        }
+                        .shadow {
+                            border-radius: 8px;
+                        }
                         .logo {
                             position: absolute;
                             width: 24px;
