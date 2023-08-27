@@ -3,6 +3,7 @@ import './hariHariOMB.scss';
 import hariPenetasan from './hariPenetasan.js';
 import hariPembentukan1 from './hariPembentukan1';
 import hariPembentukan2 from './hariPembentukan2';
+import kuliahPedana from './kuliahPerdana';
 import TopInfo from "../../Components/TopInfo/TopInfo";
 import Heading from '../../Components/Heading/Heading';
 import { useParams, useNavigate } from 'react-router-dom';
@@ -20,6 +21,8 @@ const HariHariOMB = () => {
             setDay(1);
         } else if (hariID == "hari-pembentukan-2") {
             setDay(2);
+        } else if (hariID == "kuliah-perdana") {
+            setDay(3);
         } else {
             navigate("/");
         }
@@ -44,6 +47,12 @@ const HariHariOMB = () => {
             subTitle: "Ini bakal jadi text bawahnya title yang intinya kea penjelasan lebih lanjut terkait titlenya gitu",
             asset: hariPembentukan2
         },
+        {
+            title: "Kuliah Perdana",
+            bg : "/Assets/HariHariOMB/BG3.png",
+            subTitle: "Ini bakal jadi text bawahnya title yang intinya kea penjelasan lebih lanjut terkait titlenya gitu",
+            asset: kuliahPedana
+        },
     ];
 
     return (
@@ -52,10 +61,6 @@ const HariHariOMB = () => {
             <div className="hariHariOMB__section" style={{backgroundImage: `url(${array[day].bg})`,backgroundSize:"100% 100%"}}>
                 <TopInfo />
                 <Heading nama={array[day].title} job={array[day].subTitle} />
-                {/* <div className="hariHari__titleBox">
-                <h1 className="hariHariOMB__title">{array[day].title}</h1>
-                <p className="hariHariOMB__subTitle">{array[day].subTitle}</p>
-            </div> */}
                 <div className="hariHariOMB__aksesBox">
                     <div>
                         <p>Mau lihat semua dokumentasi?</p>
@@ -87,6 +92,7 @@ const HariHariOMB = () => {
                     <img src={array[day].asset[10].img} class="photo19" alt="" />
                     <img src={array[day].asset[10].img} class="photo20" alt="" />
                 </div>
+                
             </div>
         </>
 

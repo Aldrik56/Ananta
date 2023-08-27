@@ -1,6 +1,3 @@
-
-
-
 const hariPembentukan1 = [
     {
         id:1,

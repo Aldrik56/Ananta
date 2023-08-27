@@ -72,58 +72,26 @@
     padding: 0;
 }
 
+// WIDTH 1920
 .hariHariOMB__section {
-    // padding:0px 300px;
-    // height: fit-content;
-    overflow-x: hidden;
-    
-    padding:38px 300px 172px 300px; 
-    .hariHari__titleBox {
-        display: flex;
-        flex-direction: column;
-        gap:8px;
-        margin-top: 24px;
-
-        h1 {
-            font-family: "DM Sans";
-            font-size: 48px;
-            font-style: normal;
-            font-weight: 700;
-            margin: 0;
-            background: var(--heading, linear-gradient(180deg, #696969 0%, #000 100%));
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        p {
-            align-self: stretch;
-            color: #545454;
-            font-family: DM Sans;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-        }
-
-    }
+    padding: 0 300px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
     .hariHariOMB__aksesBox {
-        // margin-top: 36px;
+        margin-top: 36px;
         border-radius: 20px;
-        // position:sticky;
-        // top:20px;
         position: -webkit-sticky;
         position: sticky;
-        top: 20px; 
+        top: 0; 
+        z-index: 100;
         background: linear-gradient(144deg, rgba(146, 70, 59, 0.60) 0%, rgba(50, 29, 25, 0.60) 100%);
         box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.40);
         backdrop-filter: blur(50px);
-        
         > div {
             display: flex;
             justify-content: space-between;
-            padding:8px 8px 8px 20px;
-
+            padding: 8px 8px 8px 20px;
             p {
                 color: #FFF;
                 leading-trim: both;
@@ -133,9 +101,8 @@
                 font-style: normal;
                 font-weight: 500;
                 line-height: 160%; 
-                margin:auto 0px;
+                margin: auto 0px;
             }
-
             .aksesDriveDiv {
                 display: flex;
                 justify-content: center;
@@ -168,23 +135,21 @@
                 }
             }
         }
-
         p {
             color:#FFFFFF;
             font-family:DM Sans;
         }
     }
-    
     .hariHariOMB__photoGrid {
         padding-top:36px;
         display: grid;
         gap:16px;
+        margin-bottom: 140px;
         grid-template-areas:      
         'photo1 photo1 photo2 photo3'
         'photo4 photo5 photo6 photo6'
         'photo7 photo8 photo6 photo6'
         'photo9 photo10 photo10 photo11';
-
         img {
             width:100%;
             height:100%;
@@ -202,68 +167,22 @@
 
 }
 
+// WIDTH 1919 - 1440
 @media screen and (max-width: 1440px) {
     .hariHariOMB__section {
-        // padding:0px 300px;
-        height: fit-content;
-        overflow-x: hidden;
-        padding:38px 120px 172px 120px; 
-    
+        padding: 0 120px;
         .hariHariOMB__aksesBox {
             margin-top: 36px;
             border-radius: 20px;
-            background: linear-gradient(144deg, rgba(146, 70, 59, 0.60) 0%, rgba(50, 29, 25, 0.60) 100%);
-            box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.40);
-            backdrop-filter: blur(50px);
-            .hariHari__titleBox {
-                display: flex;
-                flex-direction: column;
-                gap:8px;
-        
-                h1 {
-                    font-family: "DM Sans";
-                    font-size: 40px;
-                    font-style: normal;
-                    font-weight: 700;
-                    margin: 0;
-                    background: var(--heading, linear-gradient(180deg, #696969 0%, #000 100%));
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                }
-        
-                p {
-                    color: #545454;
-                    font-family: DM Sans;
-                    font-size: 20px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: normal;
-                }
-        
-            }
             > div {
-                display: flex;
-                justify-content: space-between;
-                padding:8px 8px 8px 20px;
-    
                 p {
-                    color: #FFF;
-                    leading-trim: both;
-                    text-edge: cap;
-                    font-family: DM Sans;
                     font-size: 18px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: 160%; 
-                    margin:auto 0px;
                 }
-    
                 .aksesDriveDiv {
                     display: flex;
                     justify-content: center;
                     height: 44px;
-                    width:196px;
+                    width: 196px;
                     align-items: center;
                     gap: 10px;
                     flex-shrink: 0;
@@ -284,93 +203,54 @@
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
                     }
-
                     img {
                         width: 16px;
                         height: 16px;
                     }
                 }
             }
-    
             p {
                 color:#FFFFFF;
                 font-family:DM Sans;
             }
         }
-        
         .hariHariOMB__photoGrid {
-            padding-top:36px;
+            padding-top: 36px;
             display: grid;
-            gap:12px;
+            gap: 12px;
             grid-template-areas:      
             'photo1 photo1 photo2 photo3'
             'photo4 photo5 photo6 photo6'
             'photo7 photo8 photo6 photo6'
             'photo9 photo10 photo11 photo12';
-            
             .photo12 {
                 display: block;
             }
             img {
-                width:100%;
-                height:100%;
+                width: 100%;
+                height: 100%;
                 border-radius: 20px;
                 object-fit: cover;
                 box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25) inset;
-
             }
         }
-    
     }
 }
 
-@media screen and( max-width :1200px ){
+// WIDTH 1439 - 1200
+@media screen and( max-width: 1200px ){
     .hariHariOMB__section {
-        // padding:0px 300px;
-        height: fit-content;
-        overflow-x: hidden;
-        padding:38px 120px 172px 120px; 
-
-        .hariHari__titleBox {
-            display: flex;
-            flex-direction: column;
-            gap:8px;
-    
-            h1 {
-                font-family: "DM Sans";
-                font-size: 40px;
-                font-style: normal;
-                font-weight: 700;
-                margin: 0;
-                background: var(--heading, linear-gradient(180deg, #696969 0%, #000 100%));
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-    
-            p {
-                color: #545454;
-                font-family: DM Sans;
-                font-size: 20px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: normal;
-            }
-    
-        }
-    
+        padding: 0 120px;
         .hariHariOMB__aksesBox {
             margin-top: 36px;
             border-radius: 20px;
             background: linear-gradient(144deg, rgba(146, 70, 59, 0.60) 0%, rgba(50, 29, 25, 0.60) 100%);
             box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.40);
             backdrop-filter: blur(50px);
-            
             > div {
                 display: flex;
                 justify-content: space-between;
-                padding:8px 20px;
-    
+                padding: 8px 8px 8px 20px;
                 p {
                     color: #FFF;
                     leading-trim: both;
@@ -380,14 +260,13 @@
                     font-style: normal;
                     font-weight: 500;
                     line-height: 160%; 
-                    margin:auto 0px;
+                    margin: auto 0px;
                 }
-    
                 .aksesDriveDiv {
                     display: flex;
                     justify-content: center;
                     height: 44px;
-                    width:196px;
+                    width: 196px;
                     align-items: center;
                     gap: 10px;
                     flex-shrink: 0;
@@ -408,36 +287,31 @@
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
                     }
-
                     img {
                         width: 16px;
                         height: 16px;
                     }
                 }
             }
-    
             p {
                 color:#FFFFFF;
                 font-family:DM Sans;
             }
         }
-        
         .hariHariOMB__photoGrid {
-            padding-top:36px;
+            padding-top: 36px;
             display: grid;
-            gap:12px;
+            gap: 12px;
             grid-template-areas:      
             'photo1 photo1 photo2 photo3'
             'photo4 photo5 photo6 photo6'
             'photo7 photo8 photo6 photo6'
             'photo9 photo10 photo11 photo12';
-    
             img {
-                width:100%;
+                width: 100%;
                 border-radius: 20px;
                 object-fit: cover;
                 box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25) inset;
-
             }
             .photo1 {
                 aspect-ratio: 158/76;
@@ -450,180 +324,17 @@
     }
 }
 
-@media screen and (max-width:810px){
+// WIDTH 1199 - 810
+@media screen and (max-width: 810px){
     .hariHariOMB__section {
-        // padding:0px 300px;
-        height: fit-content;
-        overflow-x: hidden;
-        padding:28px 48px 172px 48px; 
-        .hariHari__titleBox {
-            display: flex;
-            flex-direction: column;
-            gap:8px;
-    
-            h1 {
-                font-family: "DM Sans";
-                font-size: 28px;
-                font-style: normal;
-                font-weight: 700;
-                margin: 0;
-                background: var(--heading, linear-gradient(180deg, #696969 0%, #000 100%));
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-    
-            p {
-                color: #545454;
-                font-family: DM Sans;
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: normal;
-            }
-    
-        }
-    
+        padding: 0 48px;
         .hariHariOMB__aksesBox {
             margin-top: 24px;
-            border-radius: 20px;
-            background: linear-gradient(144deg, rgba(146, 70, 59, 0.60) 0%, rgba(50, 29, 25, 0.60) 100%);
-            box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.40);
-            backdrop-filter: blur(50px);
-
-            
-            > div {
-                display: flex;
-                justify-content: space-between;
-                padding:4px 4px 4px 16px;
-    
-                p {
-                    color: #FFF;
-                    leading-trim: both;
-                    text-edge: cap;
-                    font-family: DM Sans;
-                    font-size: 12px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: 160%; 
-                    margin:auto 0px;
-                }
-    
-                .aksesDriveDiv {
-                    display: flex;
-                    justify-content: center;
-                    height: 34px;
-                    width:125px;
-                    align-items: center;
-                    gap: 10px;
-                    flex-shrink: 0;
-                    border-radius: 13px;
-                    background: var(--white, linear-gradient(180deg, #F7F7F7 0%, #DBDBDB 100%));
-                    box-shadow: 0px -6px 8px 0px rgba(0, 0, 0, 0.25) inset, 0px 6px 6px 0px rgba(0, 0, 0, 0.20);
-                    a {  
-                        text-align: center;
-                        leading-trim: both;
-                        text-edge: cap;
-                        font-family: DM Sans;
-                        font-size: 14px;
-                        font-style: normal;
-                        font-weight: 500;
-                        line-height: 160%;      
-                        background: linear-gradient(180deg, #7D7D7D 0%, #000 100%);
-                        background-clip: text;
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                    }
-
-                    img {
-                        width: 16px;
-                        height: 16px;
-                    }
-                }
-            }
-    
-            p {
-                color:#FFFFFF;
-                font-family:DM Sans;
-            }
-        }
-        
-        .hariHariOMB__photoGrid {
-            padding-top:24px;
-            display: grid;
-            gap:8px;
-            grid-template-areas:      
-            'photo1 photo2 photo3 photo4'
-            'photo5 photo6 photo7 photo8'
-            'photo9 photo10 photo11 photo12'
-            'photo13 photo14 photo15 photo16'
-            'photo17 photo18 photo19 photo20';
-
-            .photo12, .photo13, .photo14, .photo15, .photo16, .photo17, .photo18, .photo19, .photo20 {
-                display: block;
-            }
-    
-            img {
-                max-width:172.5px;
-                max-height:172.5px;
-                aspect-ratio: 1/1;
-                border-radius: 20px;
-                // object-fit: cover;
-                box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25) inset;
-            }
-        }
-    
-    }
-}
-
-@media screen and (max-width:432px){
-    .hariHariOMB__section {
-        // padding:0px 300px;
-        height: fit-content;
-        overflow-x: hidden;
-        padding:19px 16px 172px 16px; 
-        .hariHari__titleBox {
-            display: flex;
-            flex-direction: column;
-            gap:4px;
-    
-            h1 {
-                font-family: "DM Sans";
-                font-size: 24px;
-                font-style: normal;
-                font-weight: 700;
-                margin: 0;
-                background: var(--heading, linear-gradient(180deg, #696969 0%, #000 100%));
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-    
-            p {
-                color: #545454;
-                font-family: DM Sans;
-                font-size: 12px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: normal;
-            }
-    
-        }
-    
-        .hariHariOMB__aksesBox {
-            margin-top: 16px;
             border-radius: 12px;
-            background: var(--warning, linear-gradient(144deg, rgba(146, 70, 59, 0.60) 0%, rgba(50, 29, 25, 0.60) 100%));
-                box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.40);
-                backdrop-filter: blur(50px);
-
-            
             > div {
                 display: flex;
                 justify-content: space-between;
-                padding:4px 4px 4px 16px;
-                border-radius: 12px;
-    
+                padding: 4px 4px 4px 16px;
                 p {
                     color: #FFF;
                     leading-trim: both;
@@ -633,14 +344,13 @@
                     font-style: normal;
                     font-weight: 500;
                     line-height: 160%; 
-                    margin:auto 0px;
+                    margin: auto 0px;
                 }
-    
                 .aksesDriveDiv {
                     display: flex;
                     justify-content: center;
                     height: 34px;
-                    width:125px;
+                    width: 125px;
                     align-items: center;
                     gap: 10px;
                     flex-shrink: 0;
@@ -661,50 +371,122 @@
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
                     }
-
                     img {
                         width: 16px;
                         height: 16px;
                     }
                 }
             }
-    
             p {
                 color:#FFFFFF;
                 font-family:DM Sans;
             }
         }
-        
         .hariHariOMB__photoGrid {
-            padding-top:16px;
+            padding-top: 24px;
             display: grid;
-            gap:4px;
-            // grid-template-areas:      
-            // 'photo1 photo2 photo3 photo4'
-            // 'photo5 photo6 photo7 photo8'
-            // 'photo9 photo10 photo11 photo12'
-            // 'photo13 photo14 photo15 photo16'
-            // 'photo17 photo18 photo19 photo20';
-            
+            gap: 8px;
+            grid-template-areas:      
+            'photo1 photo2 photo3 photo4'
+            'photo5 photo6 photo7 photo8'
+            'photo9 photo10 photo11 photo12'
+            'photo13 photo14 photo15 photo16'
+            'photo17 photo18 photo19 photo20';
+            .photo12, .photo13, .photo14, .photo15, .photo16, .photo17, .photo18, .photo19, .photo20 {
+                display: block;
+            }
+            img {
+                max-width: 172.5px;
+                max-height: 172.5px;
+                aspect-ratio: 1/1;
+                border-radius: 12px;
+                box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25) inset;
+            }
+        }
+    }
+}
+
+// WIDTH 809 - 432
+@media screen and (max-width: 432px){
+    .hariHariOMB__section {
+        padding: 0 16px;
+        .hariHariOMB__aksesBox {
+            margin-top: 16px;
+            border-radius: 12px;
+            background: var(--warning, linear-gradient(144deg, rgba(146, 70, 59, 0.60) 0%, rgba(50, 29, 25, 0.60) 100%));
+            box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.40);
+            backdrop-filter: blur(50px);
+            > div {
+                display: flex;
+                justify-content: space-between;
+                padding: 4px 4px 4px 16px;
+                border-radius: 12px;
+                p {
+                    color: #FFF;
+                    leading-trim: both;
+                    text-edge: cap;
+                    font-family: DM Sans;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 160%; 
+                    margin: auto 0px;
+                }
+                .aksesDriveDiv {
+                    display: flex;
+                    justify-content: center;
+                    height: 34px;
+                    width: 125px;
+                    align-items: center;
+                    gap: 10px;
+                    flex-shrink: 0;
+                    border-radius: 8px;
+                    background: var(--white, linear-gradient(180deg, #F7F7F7 0%, #DBDBDB 100%));
+                    box-shadow: 0px -6px 8px 0px rgba(0, 0, 0, 0.25) inset, 0px 6px 6px 0px rgba(0, 0, 0, 0.20);
+                    a {  
+                        text-align: center;
+                        leading-trim: both;
+                        text-edge: cap;
+                        font-family: DM Sans;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 160%;      
+                        background: linear-gradient(180deg, #7D7D7D 0%, #000 100%);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                    img {
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+            p {
+                color:#FFFFFF;
+                font-family:DM Sans;
+            }
+        }
+        .hariHariOMB__photoGrid {
+            padding-top: 16px;
+            display: grid;
+            gap: 4px;
             grid-template-areas:      
             'photo1 photo2' 
             'photo3 photo4'
             'photo5 photo6' 
             'photo7 photo8';
-
             .photo9,.photo10,.photo11,.photo12, .photo13, .photo14, .photo15, .photo16, .photo17, .photo18, .photo19, .photo20 {
                 display: none;
             }
-    
             img {
-                max-width:100%;
-                max-height:100%;
+                max-width: 100%;
+                max-height: 100%;
                 aspect-ratio: 1/1;
-                border-radius: 20px;
-                // object-fit: cover;
+                border-radius: 8px;
                 box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25) inset;
             }
         }
-    
     }
 }

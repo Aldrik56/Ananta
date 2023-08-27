@@ -46,6 +46,7 @@
     border-radius: 20px;
     width: 100%;
     padding-bottom: 56.25%;
+    margin-bottom: 140px;
     .video {
       border-radius: 20px;
       position: absolute;
@@ -175,6 +176,12 @@
 @media screen and (max-width: 432px) {
   .AfterMovie {
     padding: 0 16px;
+    .video-container {
+      border-radius: 12px;
+      .video {
+        border-radius: 12px;
+      }
+    }
     .pohondanawan {
       display: none;
     }

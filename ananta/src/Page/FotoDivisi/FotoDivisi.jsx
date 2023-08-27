@@ -1,9 +1,9 @@
 import React, { useRef, useState, useEffect  } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation } from 'swiper/modules';
+import { Keyboard, Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 import "./FotoDivisi.scss";
 
@@ -12,7 +12,7 @@ import TopInfo from "../../Components/TopInfo/TopInfo";
 import HeadingLogo from "../../Components/HeadingLogo/HeadingLogo";
 import Navbar from '../../Components/Navbar/Navbar';
 
-const FotoDivisi = () => {
+const FotoDivisi = () => {    
     const path = window.location.pathname;
     const [domain, setDomain] = useState();
     const [slide, setSlide] = useState(0);
@@ -138,6 +138,104 @@ const FotoDivisi = () => {
         },
     ]
 
+    const listAnggotaWiskira = [
+        {
+            "first": "FARION",
+            "last": "TEKKRY",
+            "jabatan": "Koordinator",
+            "foto1": "./Assets/FotoDivisi/wiskira/SwiperAnggota1A.png",
+            "foto2": "./Assets/FotoDivisi/wiskira/SwiperAnggota1B.png",
+        },
+        {   "first": "JEZREEL",
+            "last": "KOSASIH",
+            "jabatan": "Koordinator",
+            "foto1": "./Assets/FotoDivisi/wiskira/SwiperAnggota2A.png",
+            "foto2": "./Assets/FotoDivisi/wiskira/SwiperAnggota2B.png",
+        },
+        {
+            "first": "AILEE",
+            "last": "VICH",
+            "jabatan": "Anggota",
+            "foto1": "./Assets/FotoDivisi/wiskira/SwiperAnggota3A.png",
+            "foto2": "./Assets/FotoDivisi/wiskira/SwiperAnggota3B.png",
+        },
+        {
+            "first": "ALDRIK",
+            "last": "CIAPUTRA",
+            "jabatan": "Anggota",
+            "foto1": "./Assets/FotoDivisi/wiskira/SwiperAnggota4A.png",
+            "foto2": "./Assets/FotoDivisi/wiskira/SwiperAnggota4B.png",
+        },
+        {
+            "first": "ARLYNANDHITA",
+            "last": "FELISYA",
+            "jabatan": "Anggota",
+            "foto1": "./Assets/FotoDivisi/wiskira/SwiperAnggota5A.png",
+            "foto2": "./Assets/FotoDivisi/wiskira/SwiperAnggota5B.png",
+        },
+        {
+            "first": "AXEL",
+            "last": "FERDINAND",
+            "jabatan": "Anggota",
+            "foto1": "./Assets/FotoDivisi/wiskira/SwiperAnggota6A.png",
+            "foto2": "./Assets/FotoDivisi/wiskira/SwiperAnggota6B.png",
+        },
+        {
+            "first": "DAFFA",
+            "last": "AKBARI",
+            "jabatan": "Anggota",
+            "foto1": "./Assets/FotoDivisi/wiskira/SwiperAnggota7A.png",
+            "foto2": "./Assets/FotoDivisi/wiskira/SwiperAnggota7B.png",
+        },
+        {
+            "first": "HANS",
+            "last": "PHILEMON",
+            "jabatan": "Anggota",
+            "foto1": "./Assets/FotoDivisi/wiskira/SwiperAnggota8A.png",
+            "foto2": "./Assets/FotoDivisi/wiskira/SwiperAnggota8B.png",
+        },
+        {
+            "first": "JACINTHA",
+            "last": "CORDELIE",
+            "jabatan": "Anggota",
+            "foto1": "./Assets/FotoDivisi/wiskira/SwiperAnggota9A.png",
+            "foto2": "./Assets/FotoDivisi/wiskira/SwiperAnggota9B.png",
+        },
+        {
+            "first": "JOSHUA",
+            "last": "HOTAMA",
+            "jabatan": "Anggota",
+            "foto1": "./Assets/FotoDivisi/wiskira/SwiperAnggota10A.png",
+            "foto2": "./Assets/FotoDivisi/wiskira/SwiperAnggota10B.png",
+        },
+        {
+            "first": "KOONG",
+            "last": "HIAP",
+            "jabatan": "Anggota",
+            "foto1": "./Assets/FotoDivisi/wiskira/SwiperAnggota11A.png",
+            "foto2": "./Assets/FotoDivisi/wiskira/SwiperAnggota11B.png",
+        },
+    ]
+
+    const FontNormal = {
+        fontStyle: 'normal',
+    };
+    const FontItalic = {
+        fontStyle: 'italic',
+    };
+
+    const [wiskira, setWiskira] = useState(false);
+
+    useEffect(() => {
+        const intervalWiskira = setInterval(() => {
+            setWiskira(!wiskira);
+        }, 2000);
+      
+        return () => {
+            clearInterval(intervalWiskira);
+        };
+    }, [wiskira]);
+
     return (
         <>
         <Navbar />
@@ -149,6 +247,7 @@ const FotoDivisi = () => {
                         img={`./Assets/FotoDivisi/${domain}/Logo.webp`}
                         nama="BIMANTARA"
                         job="Badan Pengurus Harian (BPH)"
+                        style={FontNormal}
                     />
                 ) : domain == "kampana" ? (
                     <HeadingLogo 
@@ -156,6 +255,7 @@ const FotoDivisi = () => {
                         img={`./Assets/FotoDivisi/${domain}/Logo.webp`}
                         nama="KAMPANA"
                         job="Acara"
+                        style={FontNormal}
                     />
                 ) : domain == "arsa" ? (
                     <HeadingLogo 
@@ -163,6 +263,7 @@ const FotoDivisi = () => {
                         img={`./Assets/FotoDivisi/${domain}/Logo.webp`}
                         nama="ARSA"
                         job="Person In Charge (PIC)"
+                        style={FontItalic}
                     />
                 ) : domain == "adhyasta" ? (
                     <HeadingLogo 
@@ -170,6 +271,7 @@ const FotoDivisi = () => {
                         img={`./Assets/FotoDivisi/${domain}/Logo.webp`}
                         nama="ADHYASTA"
                         job="Keamanan"
+                        style={FontNormal}
                     />
                 ) : domain == "syandana" ? (
                     <HeadingLogo 
@@ -177,6 +279,7 @@ const FotoDivisi = () => {
                         img={`./Assets/FotoDivisi/${domain}/Logo.webp`}
                         nama="SYANDANA"
                         job="Public Relation & Design"
+                        style={FontItalic}
                     />
                 ) : domain == "sambara" ? (
                     <HeadingLogo 
@@ -184,6 +287,7 @@ const FotoDivisi = () => {
                         img={`./Assets/FotoDivisi/${domain}/Logo.webp`}
                         nama="SAMBARA"
                         job="Perlengkapan"
+                        style={FontNormal}
                     />
                 ) : domain == "dayaka" ? (
                     <HeadingLogo 
@@ -191,6 +295,7 @@ const FotoDivisi = () => {
                         img={`./Assets/FotoDivisi/${domain}/Logo.webp`}
                         nama="DAYAKA"
                         job="Konsumsi"
+                        style={FontNormal}
                     />
                 ) : domain == "sarwaga" ? (
                     <HeadingLogo 
@@ -198,7 +303,75 @@ const FotoDivisi = () => {
                         img={`./Assets/FotoDivisi/${domain}/Logo.webp`}
                         nama="SARWAGA"
                         job="Medis"
+                        style={FontNormal}
                     />
+                ) : domain == "prabangkara" ? (
+                <HeadingLogo 
+                    lagu={`./Assets/FotoDivisi/${domain}/Yelyel.m4a`}
+                    img={`./Assets/FotoDivisi/${domain}/Logo.webp`}
+                    nama="PRABANGKARA"
+                    job="Dokumentasi"
+                    style={FontNormal}
+                />
+                ) : domain == "wiskira" ? (
+                <HeadingLogo 
+                    lagu={`./Assets/FotoDivisi/${domain}/Yelyel.m4a`}
+                    img={`./Assets/FotoDivisi/${domain}/Logo.webp`}
+                    nama="WISKIRA"
+                    job="Website"
+                    style={FontItalic}
+                />
+                ) : null }
+                { domain == "wiskira" ? (
+                    <div className="box-swiper-anggota">
+                        <Swiper
+                            slidesPerView={4}
+                            centeredSlides={false}
+                            slidesPerGroupSkip={0}
+                            loop={true}
+                            grabCursor={true}
+                            keyboard={{
+                            enabled: true,
+                            }}
+                            breakpoints={{
+                            300: {
+                                slidesPerView: 4,
+                                slidesPerGroup: 4,
+                            },
+                            }}
+                            navigation={true}
+                            pagination={{
+                                el:'.swiper-pagination',
+                                clickable: true,
+                            }}
+                            spaceBetween={16}
+                            modules={[Keyboard, Navigation, Pagination]}
+                            className="mySwiper"
+                        >
+                            {listAnggotaWiskira.map((item,index) => {
+                                return (
+                                    <SwiperSlide>
+                                        <div className="background"></div>
+                                        <img className="logo" src="./Assets/FotoDivisi/wiskira/LogoSwiper.png" alt="" />
+                                        <img className="kupu-kupu" src="./Assets/FotoDivisi/wiskira/KupuKupu.svg" alt="" />
+                                        <div className="shadow"></div>
+                                        { wiskira == false ? (
+                                            <img className="foto" src={item.foto1} alt="" />
+                                        ) : wiskira == true ? (
+                                            <img className="foto" src={item.foto2} alt="" />    
+                                        ) : null}
+                                        <p className="first">{item.first}</p>
+                                        <p className="last">{item.last}</p>
+                                        <p className="job">{item.jabatan}</p>
+                                    </SwiperSlide>
+                                )
+                            })}
+                        </Swiper>
+                        <div className="swiper-pagination" slot="pagination"></div>
+                    </div>
+                ) : null }
+                { domain == "wiskira" || domain == "prabangkara" ? (
+                    <p className="textFotoDivisi">Foto Divisi</p>
                 ) : null }
                 <div className="box-swiper">
                     <Swiper
@@ -284,6 +457,8 @@ const FotoDivisi = () => {
                             }
                         })}
                     </div>
+                ) : domain == "wiskira" || domain == "prabangkara" ? (
+                    <div></div>
                 ) : (
                     <div className="box-anggota-lain">
                         {listAnggota.map((item,index) => {

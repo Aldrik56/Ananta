@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../../public/Assets/Fonts/DMSans-Medium.ttf");
+}
+@font-face {
+  font-family: Chopper;
+  src: url("../../../public/Assets/Fonts/Chopper.ttf");
+}
+
+:root {
+  --bimantara: #1052b8;
+  --kampana: #b8110d;
+  --arsa: #fd7f9b;
+  --adhyasta: #000;
+  --syandana: #4d4d4d;
+  --sambara: #9300d2;
+  --dayaka: #cba78b;
+  --sarwaga: #41a76a;
+}
+
+.DibalikKepanitiaan {
+    padding: 0 300px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+// WIDTH 1919 - 1440
+@media screen and (max-width: 1440px) {
+    .DibalikKepanitiaan {
+        padding: 0 120px;
+    }
+}
+
+// WIDTH 1439 - 1200
+@media screen and (max-width: 1200px) {
+    .DibalikKepanitiaan {
+        padding: 0 120px;
+    }
+}
+
+// WIDTH 1199 - 810
+@media screen and (max-width: 810px) {
+    .DibalikKepanitiaan {
+        padding: 0 48px;
+    }
+}
+
+// WIDTH 809 - 432
+@media screen and (max-width: 810px) {
+    .DibalikKepanitiaan {
+        padding: 0 16px;
+    }
+}

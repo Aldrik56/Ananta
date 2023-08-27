@@ -6,7 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import * as Page from "./Page";
 import ErrorPage from "./error-page";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
+import ParticleKupuKupu from "./Components/ParticleKupu_Kupu/ParticleKupuKupu";
 const router = createBrowserRouter([
   {
     path: "/divisi",
@@ -54,12 +54,22 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
+    path: "/divisi-prabangkara",
+    element: <Page.FotoDivisi />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/divisi-wiskira",
+    element: <Page.FotoDivisi />,
+    errorElement: <ErrorPage />,
+  },
+  {
     path: "/hari-pelaksanaan",
     element: <Page.HariPelaksanaan />,
     errorElement: <ErrorPage />,
   },
   {
-    path:"hari-hari-omb",
+    path: "hari-hari-omb",
     element: <Page.HariHariOMB />,
     errorElement: <ErrorPage />,
   },
@@ -67,19 +77,26 @@ const router = createBrowserRouter([
     path: "/after-movie",
     element: <Page.AfterMovie />,
     errorElement: <ErrorPage />,
-
   },
   {
-    path:"/hari-pelaksanaan/:hariID",
+    path: "/hari-pelaksanaan/:hariID",
     element: <Page.HariHariOMB />,
     errorElement: <ErrorPage />,
-  }
+  },
+  {
+    path: "/dibalik-kepanitiaan",
+    element: <Page.DibalikKepanitiaan />,
+    errorElement: <ErrorPage />,
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <div className="route">
+      <RouterProvider router={router} />
+    </div>
+    <ParticleKupuKupu />
   </React.StrictMode>
 );
 

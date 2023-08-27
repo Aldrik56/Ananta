@@ -20,7 +20,7 @@ const HeadingLogo = (props) => {
         <>
             <div className="heading">
                 <img className="logo" onClick={() => lagu.play() } src={props.img} alt="" />
-                <Heading nama={props.nama} job={props.job} />
+                <Heading nama={props.nama} job={props.job} style={props.style} />
             </div>
         </>
     )
